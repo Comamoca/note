@@ -13,11 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/article/Denoハンズオン.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "251aa98476494620"
           }
         ]
       },
@@ -31,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Git/article/Denoハンズオン.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -58,7 +59,8 @@
                   "close": true
                 }
               }
-            }
+            },
+            "group": "251aa98476494620"
           }
         ]
       }
@@ -113,8 +115,7 @@
           "state": {}
         }
       }
-    ],
-    "currentTab": 0
+    ]
   },
   "right": {
     "id": "87f6b838e316a7d2",
@@ -126,7 +127,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Git/article/Denoハンズオン.md",
+            "file": "README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -143,7 +144,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Git/article/Denoハンズオン.md",
+            "file": "README.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -155,7 +156,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Git/article/Denoハンズオン.md"
+            "file": "README.md"
           }
         }
       }
@@ -164,13 +165,7 @@
   },
   "active": "a0fdf7a8d6eb7b76",
   "lastOpenFiles": [
-    "Git/article/Denoの環境構築.md",
-    "Git/article/Denoハンズオン.md",
-    "memo/Denoハンズオン.md",
-    "Git/README.md",
-    "Git/article/簡単TypeScript入門.md",
-    "snippet/MiAuth.md",
-    "memo/ブックマーク.md",
+    "article/Denoハンズオン.md",
     "公式サイト.md"
   ]
 }
