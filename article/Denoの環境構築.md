@@ -5,4 +5,4 @@
 VSCodeでは公式から出ている拡張機能が使えます。
 
 ## Vim/Neovim
-Vimユーザーの方はプラグインが公開されているので、それをインストールしてください。また、Neovimを使っている方はBuildin LSPを管理するプラグイン[Mason.vim]()を用いるのがオススメです。
+Vimユーザーの方はプラグインが公開されているので、それをインストールしてください。また、Neovimを使っている方はBuildin LSPを管理するプラグイン[Mason.vim](https://github.com/williamboman/mason.nvim)を用いるのがオススメです。
