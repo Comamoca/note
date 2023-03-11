@@ -23,11 +23,9 @@
             "id": "58cc4bf85ddc05b8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
-                "mode": "source",
-                "source": false
+                "file": "article/AIノート/img/00019-3277968201.png"
               }
             }
           }
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+                "file": "article/AIノート/img/00019-3277968201.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+                "file": "article/AIノート/img/00019-3277968201.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md"
+                "file": "article/AIノート/img/00019-3277968201.png"
               }
             }
           }
@@ -160,20 +158,20 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "58cc4bf85ddc05b8",
+  "active": "8a0a2e4ddf6d2c86",
   "lastOpenFiles": [
-    "article/AIノート/もみじちゃん専用モデル育成計画【Part1】.md",
     "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+    "article/AIノート/もみじちゃん専用モデル育成計画【Part1】.md",
     "article/AIノート/AIノート.md",
-    "00215-2068469353.png",
+    "article/AIノート/img/00215-2068469353.png",
     "00215-2068469353 1.png",
-    "00034-2494648858.png",
-    "00020-3277968202.png",
-    "00019-3277968201.png",
-    "00218-686134766.png",
-    "00219-686134767.png",
-    "00229-3458574480.png",
-    "00231-3458574482.png",
-    "00220-3758960213.png"
+    "article/AIノート/img/00034-2494648858.png",
+    "article/AIノート/img/00020-3277968202.png",
+    "article/AIノート/img/00019-3277968201.png",
+    "article/AIノート/img/00218-686134766.png",
+    "article/AIノート/img/00219-686134767.png",
+    "article/AIノート/img/00229-3458574480.png",
+    "article/AIノート/img/00231-3458574482.png",
+    "article/AIノート/img/00220-3758960213.png"
   ]
 }
