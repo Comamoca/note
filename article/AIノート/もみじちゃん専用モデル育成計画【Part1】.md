@@ -86,3 +86,57 @@ Anythingでやったらどうなるのか気になりすぎるのでやってみ
 まずStable Diffusion WebUI...の拡張版**Automatic1111**を導入する。このWebUIの拡張機能にDreamArtistがあるので、それを使いたい。
 
 ちなみにモデルのファイル形式で`ckpt`と`safetensors`というのがあって、両者とも使えるけれど、`safetensors`のほうが読み込みが速いらしい。
+
+上に書いてあるもみじちゃんのモデルは、[この記事](http://cedro3.com/ai/dream-booth/)を参考にやってみた。ただ、この記事はStable Diffusionでやっている。そこでStanble Diffusionの箇所をAnytingに書き換えて実行してみたが、上手くいかなかった。
+
+これは恐らくAnythingがDiffusersの形式に対応してないのが原因だと思うので、まずはDiffusersでAnythingを実行できるようにしたい。
+
+
+```Prompt
+(((best quality))), one girl, huzuki_momiji,  school uniform, wear_blue_blouse, long skirt, hanging_skirt, wide_suspenders, bob cut,  young, flat_chest, small_breasts,  red_ribbon_string, full_body_shot
+```
+
+```Negative
+(((Blurry Eyes))), (((bad anatomy))), ((disabled body)), ((deformed body)), ((missing finger)), ((mutant hands)), ((more than five fingers)), badly drawn hands, lack of detail, (((Low resolution))), ((bad hands)), ((text)), error, cropped, low-quality image, normal quality, jpeg artifacts, signature, watermark, username, blurry, lack of details in the image, big_breasts, breasts, cut_off,  wear_glasses
+```
+
+## モデルがあった
+なんとHuggingFaceにおにまいのイラストを生成するモデルが[あった](https://huggingface.co/alea31415/onimai-characters/tree/main)ので、それを使ってみた。
+
+ほとんど同じ呪文で生成したのが以下の画像
+![[00227-1011728969.png]]
+
+![[00223-3758960216.png]]
+
+![[00222-3758960215.png]]
+
+![[00221-3758960214.png]]
+
+![[00220-3758960213.png]]
+
+![[00231-3458574482.png]]
+
+![[00229-3458574480.png]]
+
+素晴らしい...素晴らしい...あれ程まで苦戦したもみじちゃんのイラストが簡単に生成できている...
+
+しかもプロンプトで指定した服装(アニメ準拠)を完璧に再現している...しかもこのモデル、複数人のイラストも生成できるのでてぇてぇを過剰に摂取できる...！
+![[00215-2068469353.png]]![[00219-686134767.png]]
+
+![[00218-686134766.png]]
+
+![[00215-2068469353.png]]
+
+しかも漫画・アニメで描かれてないであろう長髪もみじちゃんのイラストも生成できる！
+![[00019-3277968201.png]]
+
+![[00020-3277968202.png]]
+
+![[00034-2494648858.png]]
+
+いやなんなんすか。最高じゃないですか...しかもアニメ版と漫画版の画風を切り替えられる！すごい...凄すぎる。
+
+## ということで
+本来の目的である、「もみじちゃんのイラストを生成する」という目的は大方達成できた。
+ただ、今度はヘッダーに使えるような背景付きのイラストを生成したいだとか、壁紙に使えるようなFullHDサイズのイラストを生成したいだとか、色んな欲求が湧いてきたので、引き続きこの分野は研究していきたい。
+続きについては[[もみじちゃんイラスト生成計画【Part2】]]で

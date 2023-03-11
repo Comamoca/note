@@ -21,5 +21,6 @@
     "editor:undo",
     "editor:toggle-keyboard",
     "editor:configure-toolbar"
-  ]
+  ],
+  "alwaysUpdateLinks": true
 }
