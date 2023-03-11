@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/AIノート/もみじちゃん専用モデル育成計画【Part1】.md",
+                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part1】.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,9 +23,23 @@
             "id": "58cc4bf85ddc05b8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "article/AIノート/img/00019-3277968201.png"
+                "file": "article/AIノート/AIノート.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58e713c4bed8bde9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/AIノート/AIノート.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -97,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/AIノート/img/00019-3277968201.png",
+                "file": "article/AIノート/AIノート.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/AIノート/img/00019-3277968201.png",
+                "file": "article/AIノート/AIノート.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/AIノート/img/00019-3277968201.png"
+                "file": "article/AIノート/AIノート.md"
               }
             }
           }
@@ -158,20 +172,22 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "8a0a2e4ddf6d2c86",
+  "active": "58cc4bf85ddc05b8",
   "lastOpenFiles": [
-    "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
-    "article/AIノート/もみじちゃん専用モデル育成計画【Part1】.md",
+    "article/imgs/Pasted image 20230312074518.png",
+    "article/AIノート/プロンプトメモ.md",
     "article/AIノート/AIノート.md",
-    "article/AIノート/img/00215-2068469353.png",
-    "00215-2068469353 1.png",
-    "article/AIノート/img/00034-2494648858.png",
-    "article/AIノート/img/00020-3277968202.png",
-    "article/AIノート/img/00019-3277968201.png",
-    "article/AIノート/img/00218-686134766.png",
-    "article/AIノート/img/00219-686134767.png",
-    "article/AIノート/img/00229-3458574480.png",
-    "article/AIノート/img/00231-3458574482.png",
-    "article/AIノート/img/00220-3758960213.png"
+    "article/AIノート/もみじちゃんイラスト生成計画【Part1】.md",
+    "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+    "article/imgs/Pasted image 20230307185554.png",
+    "article/imgs/Pasted image 20230307185707.png",
+    "article/imgs/Pasted image 20230307131436.png",
+    "article/imgs/Pasted image 20230307185824.png",
+    "article/imgs/Pasted image 20230307190043.png",
+    "article/imgs/Pasted image 20230307190327.png",
+    "article/imgs/Pasted image 20230307191807.png",
+    "article/imgs/Pasted image 20230307201555.png",
+    "article/imgs/Pasted image 20230307201842.png",
+    "article/imgs/Pasted image 20230307203058.png"
   ]
 }
