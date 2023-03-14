@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "d50a713c5a2ab38c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part1】.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0bf593ddfb997325",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "モデルカード下書き.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "58cc4bf85ddc05b8",
             "type": "leaf",
             "state": {
@@ -30,8 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "92cb87a815c3b023",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/AIノート/AIノート.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -81,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -98,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+                "file": "article/AIノート/AIノート.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+                "file": "article/AIノート/AIノート.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md"
+                "file": "article/AIノート/AIノート.md"
               }
             }
           }
@@ -159,21 +195,23 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "b9d7a1b24167a070",
+  "active": "92cb87a815c3b023",
   "lastOpenFiles": [
-    "article/AIノート/もみじちゃんイラスト生成計画【Part1】.md",
-    "article/AIノート/AIノート.md",
-    "article/imgs/Pasted image 20230312074518.png",
     "article/AIノート/プロンプトメモ.md",
     "article/AIノート/もみじちゃんイラスト生成計画【Part2】.md",
+    "article/AIノート/PaperSpaceでLoRAを使ったら学習を行う.md",
+    "article/AIノート/AIノート.md",
+    "モデルカード下書き.md",
+    "article/imgs/00149-1678988093.png",
+    "article/imgs/00051-377179372.png",
+    "article/AIノート/もみじちゃんイラスト生成計画【Part1】.md",
+    "article/imgs/00038-4158102242.png",
+    "article/imgs/Pasted image 20230312074518.png",
     "article/imgs/Pasted image 20230307185554.png",
     "article/imgs/Pasted image 20230307185707.png",
     "article/imgs/Pasted image 20230307131436.png",
     "article/imgs/Pasted image 20230307185824.png",
     "article/imgs/Pasted image 20230307190043.png",
-    "article/imgs/Pasted image 20230307190327.png",
-    "article/imgs/Pasted image 20230307191807.png",
-    "article/imgs/Pasted image 20230307201555.png",
-    "article/imgs/Pasted image 20230307201842.png"
+    "article/imgs/Pasted image 20230307190327.png"
   ]
 }

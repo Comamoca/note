@@ -51,4 +51,9 @@ white background, simple background
 ## 漫画風のイラスト
 `megazine`で出てくる。おにまいモデルだけなのかもしれない。
 
+## ポートレート風
+`depth of field`を指定すると、背景がぼやけるようなイラストが生成できる。Counterfrltv2で確認
 
+((masterpiece,best quality)),1girl, solo, animal ears, fox, barefoot, knees up, school uniform, sitting, fox ears, short sleeves, looking at viewer, bed, short hair, smile, golden brown hair, puffy sleeves, bedroom, puffy short sleeves, bangs, on bed, full body, animal, white dress, sunlight, brown eyes, dappled sunlight, day, depth of field
+
+EasyNegative, extra fingers,fewer fingers,  extra legs,fewer legs,fewer fingers,  extra arms, fewer arms,
