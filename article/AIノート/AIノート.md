@@ -57,3 +57,48 @@ white background, simple background
 ((masterpiece,best quality)),1girl, solo, animal ears, fox, barefoot, knees up, school uniform, sitting, fox ears, short sleeves, looking at viewer, bed, short hair, smile, golden brown hair, puffy sleeves, bedroom, puffy short sleeves, bangs, on bed, full body, animal, white dress, sunlight, brown eyes, dappled sunlight, day, depth of field
 
 EasyNegative, extra fingers,fewer fingers,  extra legs,fewer legs,fewer fingers,  extra arms, fewer arms,
+
+```
+accelerate launch --num_cpu_threads_per_process 1 train_network.py \
+    --pretrained_model_name_or_path=/notebooks/Counterfeit-V2.5_fp16.safetensors \
+    --dataset_config=/notebooks/LoRA/config.toml \
+    --output_dir=/notebooks/LoRA/output  \
+    --output_name=HozukiMomiji-Counterfeit-V2.5 \
+    --save_model_as=safetensors \
+    --prior_loss_weight=1.0 \
+    --max_train_steps=400 \
+    --learning_rate=1e-4 \
+    --optimizer_type="AdamW8bit" \
+    --xformers \
+    --mixed_precision="fp16" \
+    --cache_latents \
+    --gradient_checkpointing \
+    --save_every_n_epochs=1 \
+    --network_module=networks.lora
+```
+
+```
+[general]
+enable_bucket = true                        # Aspect Ratio Bucketingを使うか否か
+
+[[datasets]]
+resolution = 512                            # 学習解像度
+batch_size = 4                              # バッチサイズ
+
+  [[datasets.subsets]]
+  image_dir = '/notebooks/LoRA/train_HozukiMomiji/'                     # 学習用画像を入れたフォルダを指定
+  class_tokens = 'HozukiMomiji girl'                # identifier class を指定
+  num_repeats = 10                          # 学習用画像の繰り返し回数
+```
+
+```
+accelerate launch --num_cpu_threads_per_process 12 train_network.py --pretrained_model_name_or_path=/notebooks/Counterfeit-V2.5_fp16.safetensors --train_data_dir=/notebooks/LoRA/train_HozukiMomiji --output_dir=/notebooks/LoRA/output --resolution=320,960 --train_batch_size=4 --learning_rate=8e-5 --max_train_epochs=10 --save_every_n_epochs=1 --save_model_as=safetensors --clip_skip=2 --seed=42 --color_aug --network_module=networks.lora --keep_tokens=7 --enable_bucket
+```
+
+```
+
+
+```
+
+```python
+```
