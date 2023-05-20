@@ -26,5 +26,6 @@
   "newLinkFormat": "relative",
   "attachmentFolderPath": "article/imgs",
   "useMarkdownLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current"
 }
