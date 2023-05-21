@@ -105,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "article/Haxe/Haxeのビルドまとめ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,6 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "article/Haxe/Haxeのビルドまとめ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "article/Haxe/Haxeのビルドまとめ.md"
+              }
             }
           }
         ]
@@ -162,18 +166,20 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "8a0a2e4ddf6d2c86",
+  "active": "176ae2f5bad4fe04",
   "lastOpenFiles": [
+    "article/Haxe/無題のファイル.md",
+    "article/imgs/Pasted image 20230522013648.png",
+    "article/Haxe/Haxeのビルドまとめ.md",
+    "Tetatail.md",
     "モデルカード下書き.md",
     "言語モデルを自作する方法(ChatGPT著).md",
-    "Tetatail.md",
     "Stable Diffusion エラーメモ.md",
     "BERT Q&A.md",
     "article/Gleam/逆引きGleam.md",
     "article/Gleam/README.md",
     "article/Haxe/README.md",
     "article/Gleam/nakaiメモ.md",
-    "article/Haxe/Haxeのビルドまとめ.md",
     "article/Haxe",
     "article/Gleam/Gleam Pakeages.md",
     "article/AIノート/So-vits-svc&RVC/So-vits-svc.md",
@@ -194,8 +200,6 @@
     "article/AIノート/Stable Diffusion/PaperSpaceでLoRAを使ったら学習を行う.md",
     "article/Elixir/README.md",
     "article/AIノート/Stable Diffusion/プロンプトメモ.md",
-    "article/Elixir/Phoenix.md",
-    "article/Elixir/Mix事始め.md",
     "article/imgs/00149-1678988093.png",
     "article/imgs/00051-377179372.png",
     "article/imgs/00038-4158102242.png",
@@ -204,7 +208,6 @@
     "article/imgs/Pasted image 20230307185707.png",
     "article/imgs/Pasted image 20230307131436.png",
     "article/imgs/Pasted image 20230307185824.png",
-    "article/imgs/Pasted image 20230307190043.png",
-    "article/imgs/Pasted image 20230307190327.png"
+    "article/imgs/Pasted image 20230307190043.png"
   ]
 }
