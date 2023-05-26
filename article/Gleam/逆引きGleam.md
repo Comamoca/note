@@ -62,3 +62,45 @@ import gleam/erlang/file
 let assert Ok(text) = file.read(path)
 io.println(text)
 ```
+
+## Elixirと連携したい
+ここではElixirの`IO.puts()`をGleamから呼び出してみる。
+```rust
+pub external fn puts(text) -> atom.Atom() =
+"Elixir.IO" "puts"
+```
+**external**というキーワードで、バックエンドの関数を呼び出すことができる。`IO.puts`はElixirのIOモジュールで宣言されているため、
+
+- まず１つめの引数で`Elixir.IO`と指定する。
+- その次に**puts**という関数を呼び出すため、2つめの引数で`puts`を指定する。
+
+この最初の引数の`Elixir`の部分を指定せず関数のみを指定すると、Erlangの関数を呼び出すことができる。(GleamはErlangにコンパイルされるため、デフォルトでErlangの関数を呼び出す仕様にしたと考えられる)
+
+ちなみにGleamは**JavaScriptにもコンパイル出来る**。その場合は以下のように、
+```rust
+pub external fn run() -> Int =
+  "./my-module.js" "run"
+```
+Elixirでモジュールを指定したように**JavaScriptのファイル名**を指定する。その次の関数名の指定は同じ。
+
+### Elixirのライブラリを使いたい
+ElixirのライブラリをGleamから使うには、
+- `gleam add パッケージ名`でパッケージを追加
+- `external`で関数を宣言
+この順番で行う。
+Gleamには**配下のElixirプログラムを自動でコンパイルする**というとても便利な機能があるので、`gleam add`でGleamパッケージと同じようにパッケージをインストールすることができる。
+
+パッケージをインストールした後はexternalで宣言することで呼び出す事ができる。
+この際、`iex -S mix`などでパッケージの関数を呼び出したりして調べながら書いていくと分かりやすい。
+以下はElixirの[Pandex](https://hex.pm/packages/pandex)パッケージの`gfm_to_html`関数を呼び出す例。
+```rust
+pub external fn gfm_to_html(text) -> Result(String, String) =
+"Elixir.Pandex" "gfm_to_html"
+```
+
+
+また、外部の関数には型付けのラベルを付ける事が可能。これを行うことでより堅牢なプログラムを書くことができる。
+```rust
+pub external fn any(in: List(a), satisfying: fn(a) -> Bool) =
+  "my_external_module" "any"
+```
