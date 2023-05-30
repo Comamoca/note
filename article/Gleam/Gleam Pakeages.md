@@ -15,6 +15,18 @@ https://github.com/gleam-lang/elli
 
 Webサーバーを構築するためのライブラリ。自分が書いた実装例は[ここ](https://github.com/Comamoca/sandbox/tree/main/ex_gleam)
 
+## mist
+
+https://github.com/rawhat/mist
+
+カスタマイズしやすくWebSocketにも対応しているWebサーバー
+
+## howdy
+
+https://github.com/mikeyjones/howdy
+
+mist上に構築されたExpress likeなWebサーバー
+
 ### Glicine
 
 https://github.com/giacomocavalieri/glicine

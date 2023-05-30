@@ -51,7 +51,7 @@ pub type Result(success, error) =
 
 以下のようにすればResult型から値を取得出来る。
 ```rust
-let assert Ok(text) = // Resultを返す処理
+let Ok(text) = // Resultを返す処理
 ```
 
 例えばこんな感じ(`gleam_stdlib`と`gleam_erlang`パッケージをインストールする必要がある。)
@@ -59,9 +59,16 @@ let assert Ok(text) = // Resultを返す処理
 import gleam/io
 import gleam/erlang/file
 
-let assert Ok(text) = file.read(path)
+let Ok(text) = file.read(path)
 io.println(text)
 ```
+
+しかし、この方法だと`Error()`が返された場合に例外が発生する。これを避けるには[`result.unwrap`](https://hexdocs.pm/gleam_stdlib/gleam/result.html#unwrap)を使う。
+
+### `gleam/result`を使う
+Gleamには、`Result型`を扱う際に便利なメソッドが用意されている。
+これらを使うことでよりシンプルに`Result型`を操作することができる。
+ドキュメントは[ここから](https://hexdocs.pm/gleam_stdlib/gleam/result.html)見ることができる。
 
 ## Elixirと連携したい
 ここではElixirの`IO.puts()`をGleamから呼び出してみる。
