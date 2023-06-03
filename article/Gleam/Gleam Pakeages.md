@@ -27,10 +27,8 @@ https://github.com/mikeyjones/howdy
 
 mist上に構築されたExpress likeなWebサーバー
 
-### Glicine
+## Glicine
 
 https://github.com/giacomocavalieri/glicine
 
 SSGをするツール
-
-## 

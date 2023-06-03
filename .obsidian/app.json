@@ -27,5 +27,11 @@
   "attachmentFolderPath": "article/imgs",
   "useMarkdownLinks": true,
   "promptDelete": false,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "readableLineLength": false,
+  "showFrontmatter": true,
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "spellcheck": true,
+  "vimMode": true
 }

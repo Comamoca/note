@@ -13,7 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Gleam/逆引きGleam.md",
+                "file": "article/Gleam/Gleam Pakeages.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "34ca5e6afb0508ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BERT Q&A.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1c5fd48028c0c07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a5256c35de7f2656",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Gleam/Tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -89,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5,
-    "collapsed": true
+    "width": 227.5
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -106,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Gleam/逆引きGleam.md",
+                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Gleam/逆引きGleam.md",
+                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Gleam/逆引きGleam.md"
+                "file": "article/Tips/ryeを使ったDjangoセットアップ.md"
               }
             }
           }
@@ -167,22 +203,27 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "9d505fcc0435082b",
+  "active": "a1c5fd48028c0c07",
   "lastOpenFiles": [
+    "article/Gleam/Tips.md",
+    "article/Tips/ryeを使ったDjangoセットアップ.md",
+    "article/imgs/Pasted image 20230601155411.png",
     "article/Gleam/elliメモ.md",
+    "BERT Q&A.md",
     "article/Gleam/逆引きGleam.md",
+    "article/Tips",
+    "article/Gleam/Gleam Pakeages.md",
     "article/Gleam/Gleam OTP.md",
+    "article/Gleam/README.md",
+    "article/Gleam/nakaiメモ.md",
     "article/Unity/トゥーンレンダリング.md",
     "article/Unity/AnimeToolbox.md",
-    "article/Gleam/Gleam Pakeages.md",
-    "article/Gleam/README.md",
     "article/Ruby/シェル芸の為のRuny入門.md",
     "article/Ruby/README.md",
     "article/Ruby",
     "article/Unity/MMDアニメーションメモ.md",
     "article/Unity/README.md",
     "article/Unity",
-    "article/Gleam/nakaiメモ.md",
     "article/Lua/README.md",
     "article/Lua/Teal.md",
     "article/Lua",
@@ -192,15 +233,11 @@
     "モデルカード下書き.md",
     "言語モデルを自作する方法(ChatGPT著).md",
     "Stable Diffusion エラーメモ.md",
-    "BERT Q&A.md",
     "article/Haxe/README.md",
     "article/Haxe",
     "article/AIノート/So-vits-svc&RVC/So-vits-svc.md",
     "article/AIノート/So-vits-svc&RVC/REDME.md",
-    "README.md",
-    "article/AIノート/So-vits-svc&RVC/README.md",
     "article/Gleam",
-    "article/AIノート/Stable Diffusion/もみじちゃんイラスト生成計画【Part1】.md",
     "article/AIノート/So-vits-svc&RVC",
     "article/AIノート/Stable Diffusion",
     "article/Deno",
@@ -212,7 +249,6 @@
     "article/imgs/Pasted image 20230307185554.png",
     "article/imgs/Pasted image 20230307185707.png",
     "article/imgs/Pasted image 20230307131436.png",
-    "article/imgs/Pasted image 20230307185824.png",
-    "article/imgs/Pasted image 20230307190043.png"
+    "article/imgs/Pasted image 20230307185824.png"
   ]
 }

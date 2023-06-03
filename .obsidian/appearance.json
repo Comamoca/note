@@ -1,5 +1,12 @@
 {
-  "accentColor": "#b6d392",
+  "accentColor": "#94d1b5",
   "theme": "moonstone",
-  "interfaceFontFamily": "UDEV Gothic JPDOC"
+  "interfaceFontFamily": "UDEV Gothic JPDOC",
+  "cssTheme": "Everforest",
+  "baseFontSize": 16,
+  "translucency": false,
+  "showViewHeader": true,
+  "baseFontSizeAction": false,
+  "monospaceFontFamily": "UDEV Gothic NFLG",
+  "textFontFamily": "UDEV Gothic JPDOC"
 }

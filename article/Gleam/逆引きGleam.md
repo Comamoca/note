@@ -11,9 +11,16 @@ const const_string = "This is constant string."
 
 ## 型
 
-```rust
+一般的な型名 | Gleamでの型名 | Gleamでの表現 | ライブラリ
+-------------|--------------|---------------|----------------
+整数 | Int | 1234 | [gleam/int](https://hexdocs.pm/gleam_stdlib/gleam/int.html#module-name)
+文字列 | String | "Gleam" | [gleam/string](https://hexdocs.pm/gleam_stdlib/gleam/string.html)
+リスト | List | [] | [gleam/list](https://hexdocs.pm/gleam_stdlib/gleam/list.html)
+タプル | Tuple | #("Langage", "Gleam") | [gleam/map](https://hexdocs.pm/gleam_stdlib/gleam/map.html)
+浮動小数点型 | float | -12.5 |　[gleam/float](https://hexdocs.pm/gleam_stdlib/gleam/float.html)
+真偽値 | Bool | true | [gleam/bool](https://hexdocs.pm/gleam_stdlib/gleam/bool.html#module-name)
+動的型 | Dynamic | ———————— | [gleam/dynamic](https://hexdocs.pm/gleam_stdlib/gleam/dynamic.html) |
 
-```
 
 ## 型変換(キャスト)
 
@@ -70,7 +77,30 @@ Gleamには、`Result型`を扱う際に便利なメソッドが用意されて�
 これらを使うことでよりシンプルに`Result型`を操作することができる。
 ドキュメントは[ここから](https://hexdocs.pm/gleam_stdlib/gleam/result.html)見ることができる。
 
-## Elixirと連携したい
+このライブラリに含まれている、`result.unwrap()`を使うことで`Result()`から簡単に値を取り出すことが出来る。
+
+[Gleam Playground](https://johndoneth.github.io/gleam-playground/?s=JYWwDg9gTgLgBAcwDYFMCGID0wIChSSyKoaZQoDOArkjLrmFQEZwBmAdnCGsOwBQBKOAG9ccOKngUYUOAF441JoLFwcAOjBReMJP3LVa6quwDuUNGD7SoAGjgAiBwIG4AvvUYsOi5oLgAtAB8cABKlDQwfADKMrwI9gBywEhCopiYcADyANZ8DhA5AITOuACiUFDQfMmp7kA)
+```rust
+import gleam/io
+import gleam/result
+
+pub fn main() {
+  let str = sub()
+  io.println(result.unwrap(str, ""))
+}
+
+pub fn sub() -> Result(String, Nil) {
+// Ok("ok!")
+Error(Nil)
+}
+```
+
+`unwrap()`には2つの引数を指定する必要があり、それぞれ
+- `Result型`の値
+- `Error()`だった場合の値
+を指定する。Rustの`unwrap()`と動作が違うので注意。(どちらかというと`unwrap_or_default()`に近い挙動をする。)
+
+	## Elixirと連携したい
 ここではElixirの`IO.puts()`をGleamから呼び出してみる。
 ```rust
 pub external fn puts(text) -> atom.Atom() =
@@ -90,12 +120,44 @@ pub external fn run() -> Int =
 ```
 Elixirでモジュールを指定したように**JavaScriptのファイル名**を指定する。その次の関数名の指定は同じ。
 
+## 他のBEAM言語との連携
+
+他のBEAM系言語(Ex. Erlang/Elixir)の関数を呼び出すには、`external`キーワードを使って関数を宣言する。
+
+Erlangの場合
+```rust
+pub external fn random_float() -> Float =
+	"rand" "uniform"
+```
+
+Elixirの場合
+```rust
+external fn puts(text: String) -> =
+"Elxir.IO" "puts"
+
+fn main() {
+	puts("Hello Elixir!")
+}
+```
+JavaScriptの場合
+```rust
+pub external fn run() -> Int =
+	"./my-module.js" "run"
+```
+関数を定義する際には以下のように引数に型を付けることも出来る。これを行うことでより堅牢なプログラムを書くことができる。ただしGleamはこの型付けを**完全に信用**するので、**型付けが間違っている場合は実行時エラーが発生する**ので気をつける。
+```rust
+pub external fn any(in: List(a), satisfying: fn(a) -> Bool) =
+  "my_external_module" "any"
+```
+GleamとElixirの相互運用についてはこの[サンプルプロジェクト](https://github.com/gleam-lang/mix_gleam/tree/main/test_projects/basic_project)が参考になる。
+
 ### Elixirのライブラリを使いたい
 ElixirのライブラリをGleamから使うには、
 - `gleam add パッケージ名`でパッケージを追加
 - `external`で関数を宣言
 この順番で行う。
-Gleamには**配下のElixirプログラムを自動でコンパイルする**というとても便利な機能があるので、`gleam add`でGleamパッケージと同じようにパッケージをインストールすることができる。
+Gleamは[Hex]()に対応しているので`gleam add`でGleamパッケージと同じようにパッケージをインストールすることができる。
+また、Gleamには**配下のElixirプログラムを自動でコンパイルする**というとても便利な機能があるので、プロジェクトの一部をElixirで書きそれをGleamから利用する事も可能。Elixirライブラリのグルーコードを書く場面で便利だと感じた。
 
 パッケージをインストールした後はexternalで宣言することで呼び出す事ができる。
 この際、`iex -S mix`などでパッケージの関数を呼び出したりして調べながら書いていくと分かりやすい。
@@ -103,11 +165,4 @@ Gleamには**配下のElixirプログラムを自動でコンパイルする**�
 ```rust
 pub external fn gfm_to_html(text) -> Result(String, String) =
 "Elixir.Pandex" "gfm_to_html"
-```
-
-
-また、外部の関数には型付けのラベルを付ける事が可能。これを行うことでより堅牢なプログラムを書くことができる。
-```rust
-pub external fn any(in: List(a), satisfying: fn(a) -> Bool) =
-  "my_external_module" "any"
 ```
