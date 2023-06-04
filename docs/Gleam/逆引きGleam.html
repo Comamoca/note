@@ -837,9 +837,61 @@ let name = &quot;gleam&quot;
 const const_string = &quot;This is constant string.&quot;
 </code></pre>
 <h2 id="型">型</h2>
-<pre><code class="lang-rust">
-
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>一般的な型名</th>
+<th>Gleamでの型名</th>
+<th>Gleamでの表現</th>
+<th>ライブラリ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整数</td>
+<td>Int</td>
+<td>1234</td>
+<td><a href="https://hexdocs.pm/gleam_stdlib/gleam/int.html#module-name" target="_blank">gleam/int</a></td>
+</tr>
+<tr>
+<td>文字列</td>
+<td>String</td>
+<td>&quot;Gleam&quot;</td>
+<td><a href="https://hexdocs.pm/gleam_stdlib/gleam/string.html" target="_blank">gleam/string</a></td>
+</tr>
+<tr>
+<td>リスト</td>
+<td>List</td>
+<td>[]</td>
+<td><a href="https://hexdocs.pm/gleam_stdlib/gleam/list.html" target="_blank">gleam/list</a></td>
+</tr>
+<tr>
+<td>タプル</td>
+<td>Tuple</td>
+<td>#(&quot;Langage&quot;, &quot;Gleam&quot;)</td>
+<td><a href="https://hexdocs.pm/gleam_stdlib/gleam/map.html" target="_blank">gleam/map</a></td>
+</tr>
+<tr>
+<td>浮動小数点型</td>
+<td>float</td>
+<td>-12.5</td>
+<td>　<a href="https://hexdocs.pm/gleam_stdlib/gleam/float.html" target="_blank">gleam/float</a></td>
+</tr>
+<tr>
+<td>真偽値</td>
+<td>Bool</td>
+<td>true</td>
+<td><a href="https://hexdocs.pm/gleam_stdlib/gleam/bool.html#module-name" target="_blank">gleam/bool</a></td>
+</tr>
+<tr>
+<td>動的型</td>
+<td>Dynamic</td>
+<td>————————</td>
+<td><a href="https://hexdocs.pm/gleam_stdlib/gleam/dynamic.html" target="_blank">gleam/dynamic</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="型変換キャスト">型変換(キャスト)</h2>
 <h3 id="int---string">Int -&gt; String</h3>
 <pre><code class="lang-rust">import gleam/int
@@ -865,23 +917,49 @@ int.to_string(100)
   Result(success, error)
 </code></pre>
 <p>以下のようにすればResult型から値を取得出来る。</p>
-<pre><code class="lang-rust">let assert Ok(text) = // Resultを返す処理
+<pre><code class="lang-rust">let Ok(text) = // Resultを返す処理
 </code></pre>
 <p>例えばこんな感じ(<code>gleam_stdlib</code>と<code>gleam_erlang</code>パッケージをインストールする必要がある。)</p>
 <pre><code class="lang-rust">import gleam/io
 import gleam/erlang/file
 
-let assert Ok(text) = file.read(path)
+let Ok(text) = file.read(path)
 io.println(text)
 </code></pre>
+<p>しかし、この方法だと<code>Error()</code>が返された場合に例外が発生する。これを避けるには<a href="https://hexdocs.pm/gleam_stdlib/gleam/result.html#unwrap" target="_blank"><code>result.unwrap</code></a>を使う。</p>
+<h3 id="gleamresultを使う"><code>gleam/result</code>を使う</h3>
+<p>Gleamには、<code>Result型</code>を扱う際に便利なメソッドが用意されている。
+これらを使うことでよりシンプルに<code>Result型</code>を操作することができる。
+ドキュメントは<a href="https://hexdocs.pm/gleam_stdlib/gleam/result.html" target="_blank">ここから</a>見ることができる。</p>
+<p>このライブラリに含まれている、<code>result.unwrap()</code>を使うことで<code>Result()</code>から簡単に値を取り出すことが出来る。</p>
+<p><a href="https://johndoneth.github.io/gleam-playground/?s=JYWwDg9gTgLgBAcwDYFMCGID0wIChSSyKoaZQoDOArkjLrmFQEZwBmAdnCGsOwBQBKOAG9ccOKngUYUOAF441JoLFwcAOjBReMJP3LVa6quwDuUNGD7SoAGjgAiBwIG4AvvUYsOi5oLgAtAB8cABKlDQwfADKMrwI9gBywEhCopiYcADyANZ8DhA5AITOuACiUFDQfMmp7kA" target="_blank">Gleam Playground</a></p>
+<pre><code class="lang-rust">import gleam/io
+import gleam/result
+
+pub fn main() {
+  let str = sub()
+  io.println(result.unwrap(str, &quot;&quot;))
+}
+
+pub fn sub() -&gt; Result(String, Nil) {
+// Ok(&quot;ok!&quot;)
+Error(Nil)
+}
+</code></pre>
+<p><code>unwrap()</code>には2つの引数を指定する必要があり、それぞれ</p>
+<ul>
+<li><code>Result型</code>の値</li>
+<li><p><code>Error()</code>だった場合の値
+を指定する。Rustの<code>unwrap()</code>と動作が違うので注意。(どちらかというと<code>unwrap_or_default()</code>に近い挙動をする。)</p>
 <h2 id="elixirと連携したい">Elixirと連携したい</h2>
 <p>ここではElixirの<code>IO.puts()</code>をGleamから呼び出してみる。</p>
 <pre><code class="lang-rust">pub external fn puts(text) -&gt; atom.Atom() =
 &quot;Elixir.IO&quot; &quot;puts&quot;
 </code></pre>
 <p><strong>external</strong>というキーワードで、バックエンドの関数を呼び出すことができる。<code>IO.puts</code>はElixirのIOモジュールで宣言されているため、</p>
-<ul>
-<li>まず１つめの引数で<code>Elixir.IO</code>と指定する。</li>
+</li>
+<li><p>まず１つめの引数で<code>Elixir.IO</code>と指定する。</p>
+</li>
 <li>その次に<strong>puts</strong>という関数を呼び出すため、2つめの引数で<code>puts</code>を指定する。</li>
 </ul>
 <p>この最初の引数の<code>Elixir</code>の部分を指定せず関数のみを指定すると、Erlangの関数を呼び出すことができる。(GleamはErlangにコンパイルされるため、デフォルトでErlangの関数を呼び出す仕様にしたと考えられる)</p>
@@ -890,23 +968,43 @@ io.println(text)
   &quot;./my-module.js&quot; &quot;run&quot;
 </code></pre>
 <p>Elixirでモジュールを指定したように<strong>JavaScriptのファイル名</strong>を指定する。その次の関数名の指定は同じ。</p>
+<h2 id="他のbeam言語との連携">他のBEAM言語との連携</h2>
+<p>他のBEAM系言語(Ex. Erlang/Elixir)の関数を呼び出すには、<code>external</code>キーワードを使って関数を宣言する。</p>
+<p>Erlangの場合</p>
+<pre><code class="lang-rust">pub external fn random_float() -&gt; Float =
+    &quot;rand&quot; &quot;uniform&quot;
+</code></pre>
+<p>Elixirの場合</p>
+<pre><code class="lang-rust">external fn puts(text: String) -&gt; =
+&quot;Elxir.IO&quot; &quot;puts&quot;
+
+fn main() {
+    puts(&quot;Hello Elixir!&quot;)
+}
+</code></pre>
+<p>JavaScriptの場合</p>
+<pre><code class="lang-rust">pub external fn run() -&gt; Int =
+    &quot;./my-module.js&quot; &quot;run&quot;
+</code></pre>
+<p>関数を定義する際には以下のように引数に型を付けることも出来る。これを行うことでより堅牢なプログラムを書くことができる。ただしGleamはこの型付けを<strong>完全に信用</strong>するので、<strong>型付けが間違っている場合は実行時エラーが発生する</strong>ので気をつける。</p>
+<pre><code class="lang-rust">pub external fn any(in: List(a), satisfying: fn(a) -&gt; Bool) =
+  &quot;my_external_module&quot; &quot;any&quot;
+</code></pre>
+<p>GleamとElixirの相互運用についてはこの<a href="https://github.com/gleam-lang/mix_gleam/tree/main/test_projects/basic_project" target="_blank">サンプルプロジェクト</a>が参考になる。</p>
 <h3 id="elixirのライブラリを使いたい">Elixirのライブラリを使いたい</h3>
 <p>ElixirのライブラリをGleamから使うには、</p>
 <ul>
 <li><code>gleam add パッケージ名</code>でパッケージを追加</li>
 <li><code>external</code>で関数を宣言
 この順番で行う。
-Gleamには<strong>配下のElixirプログラムを自動でコンパイルする</strong>というとても便利な機能があるので、<code>gleam add</code>でGleamパッケージと同じようにパッケージをインストールすることができる。</li>
+Gleamは<a href>Hex</a>に対応しているので<code>gleam add</code>でGleamパッケージと同じようにパッケージをインストールすることができる。
+また、Gleamには<strong>配下のElixirプログラムを自動でコンパイルする</strong>というとても便利な機能があるので、プロジェクトの一部をElixirで書きそれをGleamから利用する事も可能。Elixirライブラリのグルーコードを書く場面で便利だと感じた。</li>
 </ul>
 <p>パッケージをインストールした後はexternalで宣言することで呼び出す事ができる。
 この際、<code>iex -S mix</code>などでパッケージの関数を呼び出したりして調べながら書いていくと分かりやすい。
 以下はElixirの<a href="https://hex.pm/packages/pandex" target="_blank">Pandex</a>パッケージの<code>gfm_to_html</code>関数を呼び出す例。</p>
 <pre><code class="lang-rust">pub external fn gfm_to_html(text) -&gt; Result(String, String) =
 &quot;Elixir.Pandex&quot; &quot;gfm_to_html&quot;
-</code></pre>
-<p>また、外部の関数には型付けのラベルを付ける事が可能。これを行うことでより堅牢なプログラムを書くことができる。</p>
-<pre><code class="lang-rust">pub external fn any(in: List(a), satisfying: fn(a) -&gt; Bool) =
-  &quot;my_external_module&quot; &quot;any&quot;
 </code></pre>
 
                                 
@@ -951,7 +1049,7 @@ Gleamには<strong>配下のElixirプログラムを自動でコンパイルす�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"逆引きGleam","level":"2.5.4","depth":2,"next":{"title":"Haxe","level":"2.6","depth":1,"path":"Haxe/README.md","ref":"./Haxe/README.md","articles":[{"title":"Haxeのビルドまとめ","level":"2.6.1","depth":2,"path":"Haxe/Haxeのビルドまとめ.md","ref":"./Haxe/Haxeのビルドまとめ.md","articles":[]}]},"previous":{"title":"nakaiメモ","level":"2.5.3","depth":2,"path":"Gleam/nakaiメモ.md","ref":"./Gleam/nakaiメモ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"Gleam/逆引きGleam.md","mtime":"2023-06-03T13:38:04.506Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-04T09:16:57.284Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"逆引きGleam","level":"2.5.4","depth":2,"next":{"title":"Haxe","level":"2.6","depth":1,"path":"Haxe/README.md","ref":"./Haxe/README.md","articles":[{"title":"Haxeのビルドまとめ","level":"2.6.1","depth":2,"path":"Haxe/Haxeのビルドまとめ.md","ref":"./Haxe/Haxeのビルドまとめ.md","articles":[]}]},"previous":{"title":"nakaiメモ","level":"2.5.3","depth":2,"path":"Gleam/nakaiメモ.md","ref":"./Gleam/nakaiメモ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"Gleam/逆引きGleam.md","mtime":"2023-06-04T09:26:17.825Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-04T09:29:31.002Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
