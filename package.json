@@ -1,0 +1,20 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx honkit serve",
+    "build": "./build.sh"
+  },
+  "keywords": [],
+  "author": "Comamoca <comamoca.dev@gmail.com> (https://github.com/Comamoca)",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-plugin-mermaid-gb3": "^2.1.0",
+    "gitbook-plugin-mermaid-newface": "^4.1.0",
+    "honkit": "^4.0.7",
+    "honkit-plugin-mermaid": "^0.1.4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Note",
+  "author": "Comamoca",
+  "root": "./article",
+  "language": "ja",
+  "plugins": [
+    "honkit-plugin-mermaid"
+  ]
+}

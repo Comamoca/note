@@ -12,6 +12,7 @@
 - 関数型言語
 
 ## 言語処理系の概要
+
 ```mermaid
 graph LR
 A[Gleam]-->B[Compiler]-->C[Erlang]-->D[BEAM]

@@ -43,7 +43,7 @@ https://gamedev65535.com/entry/prompot_position/#i-4
 
 ## 単色の背景
 画像編集をする際には単色の背景が扱いやすい。それを実現するには、
-```Prompt
+```
 white background, simple background
 ```
 と入力する。
