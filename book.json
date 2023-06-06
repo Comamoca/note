@@ -4,6 +4,7 @@
   "root": "./article",
   "language": "ja",
   "plugins": [
-    "honkit-plugin-mermaid"
+    "honkit-plugin-mermaid",
+    "summary"
   ]
 }

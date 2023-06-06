@@ -11,6 +11,9 @@ dependencies:
   gitbook-plugin-mermaid-newface:
     specifier: ^4.1.0
     version: 4.1.0
+  gitbook-plugin-summary:
+    specifier: ^1.1.0
+    version: 1.1.0
   honkit:
     specifier: ^4.0.7
     version: 4.0.7
@@ -1007,6 +1010,10 @@ packages:
       d3-zoom: 3.0.0
     dev: false
 
+  /daggy@0.0.1:
+    resolution: {integrity: sha512-zMSxQ1O+9xx1CyvUP2Z2cdD+o6zB3nyInl+UcwTIq08gK704hLZkHK+ZU9boyrk8nBCIUxpZF7aXbys3BTr+rQ==}
+    dev: false
+
   /dagre-d3-renderer@0.4.26:
     resolution: {integrity: sha512-vOWj1uA4/APTrfDyfHaH/xpfXhPh9rszW+HOaEwPCeA6Afl06Lobfh7OpESuVMQW2QGuY4UQ7pte/p0WhdDs7w==}
     dependencies:
@@ -1280,6 +1287,12 @@ packages:
       - supports-color
     dev: false
 
+  /fantasy-identities@0.0.1:
+    resolution: {integrity: sha512-r3CfTXwBDO8qojCZpHbMnxjLgLxq6bsQnNrFCbWK2fsKVhwCl6lAkT07P32sU8ak1x11iYhiIiipBhni1deCaQ==}
+    dependencies:
+      daggy: 0.0.1
+    dev: false
+
   /faye-websocket@0.10.0:
     resolution: {integrity: sha512-Xhj93RXbMSq8urNCUq4p9l0P6hnySJ/7YNRhYNug0bLOuii7pKO7xQFb5mx9xZXWCar88pLPb805PvUkwrLZpQ==}
     engines: {node: '>=0.4.0'}
@@ -1311,6 +1324,11 @@ packages:
 
   /flatted@2.0.2:
     resolution: {integrity: sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==}
+    dev: false
+
+  /folktale@2.3.2:
+    resolution: {integrity: sha512-+8GbtQBwEqutP0v3uajDDoN64K2ehmHd0cjlghhxh0WpcfPzAIjPA03e1VvHlxL02FVGR0A6lwXsNQKn3H1RNQ==}
+    deprecated: This package is no longer actively maintained. Only security patches will be provided, if needed. Consider switching to fp-ts.
     dev: false
 
   /fresh@0.5.2:
@@ -1407,6 +1425,18 @@ packages:
   /gitbook-plugin-search@2.2.1:
     resolution: {integrity: sha512-oP9jhaKFUVPo756G9ywuuI43YdkZClSjfpFzNKe/a/Rcn3oVsrAM/PjdQ+dt65KfZVo3iW1LY4WdiZnNqzRP8g==}
     engines: {gitbook: '>=3.0.0-pre.0'}
+    dev: false
+
+  /gitbook-plugin-summary@1.1.0:
+    resolution: {integrity: sha512-tT+usaVc7mDLpqK2QqvBZNXUDXbom/0/OVIhAkB+cUwdaJwWCW9ViBY8TxtI1PnxJIrbfGHNAY+zvWNNx6dIrw==}
+    engines: {gitbook: '>=3.2.3'}
+    dependencies:
+      fantasy-identities: 0.0.1
+      folktale: 2.3.2
+      glob: 7.2.3
+      immutable: 3.8.2
+      immutable-ext: 1.1.5(immutable@3.8.2)
+      markdown-parser: 0.0.8
     dev: false
 
   /github-slugid@1.0.1:
@@ -1649,6 +1679,15 @@ packages:
       queue: 6.0.1
     dev: false
 
+  /immutable-ext@1.1.5(immutable@3.8.2):
+    resolution: {integrity: sha512-VU5mTRGNVeI7riw2WJ+C6CMGy84HwireCpNpwCOJbvDNFakm77f3/7/FiOqiHfPxHHBQMzZFaCrybXSSVj6x5Q==}
+    engines: {node: '>=6.2.0'}
+    peerDependencies:
+      immutable: '*'
+    dependencies:
+      immutable: 3.8.2
+    dev: false
+
   /immutable@3.8.2:
     resolution: {integrity: sha512-15gZoQ38eYjEjxkorfbcgBKBL6R7T459OuK+CpcWt7O3KF4uPCx2tD0uFETlUDIyo+1789crbMhTvQBSR5yBMg==}
     engines: {node: '>=0.10.0'}
@@ -1811,6 +1850,11 @@ packages:
 
   /lunr@0.5.12:
     resolution: {integrity: sha512-/EtfOyuNP7BLVKhDvLyKJkFvCup2vwcIwQXCuasZEFk7XUJ4/blztVuefeLapUb1I5uMGsosN9A8J9Mu9A6yBg==}
+    dev: false
+
+  /markdown-parser@0.0.8:
+    resolution: {integrity: sha512-NgGA5NFm5qSQRNjRsL71UXdxc1Cif0mkMuj3GvXfYOMuCj5LH7hig96n8IakimqGLgf6md0Kz27QWNoAzVgf7A==}
+    engines: {node: '>=0.8.x'}
     dev: false
 
   /memoize-one@5.2.1:
