@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>Nim メタプロ · Note</title>
+        <title>HonKit · Note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 4.0.7">
@@ -60,10 +60,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="中国語メモ.html" />
+    <link rel="next" href="../Lua/" />
     
     
-    <link rel="prev" href="MiAuth.html" />
+    <link rel="prev" href="../Haxe/Haxeのビルドまとめ.html" />
     
 
     </head>
@@ -611,9 +611,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.23" data-path="../HonKit/">
+        <li class="chapter active" data-level="2.23" data-path="./">
             
-                <a href="../HonKit/">
+                <a href="./">
             
                     
                     HonKit
@@ -854,9 +854,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="./">
+        <li class="chapter " data-level="7.1" data-path="../snippet/">
             
-                <a href="./">
+                <a href="../snippet/">
             
                     
                     Snippet
@@ -867,9 +867,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="BERT Q&A.html">
+        <li class="chapter " data-level="7.2" data-path="../snippet/BERT Q&A.html">
             
-                <a href="BERT Q&A.html">
+                <a href="../snippet/BERT Q&A.html">
             
                     
                     BERT Q&A
@@ -880,9 +880,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.3" data-path="GoでCLI兼ライブラリを作る.html">
+        <li class="chapter " data-level="7.3" data-path="../snippet/GoでCLI兼ライブラリを作る.html">
             
-                <a href="GoでCLI兼ライブラリを作る.html">
+                <a href="../snippet/GoでCLI兼ライブラリを作る.html">
             
                     
                     GoでCLI兼ライブラリを作る
@@ -893,9 +893,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.4" data-path="MiAuth.html">
+        <li class="chapter " data-level="7.4" data-path="../snippet/MiAuth.html">
             
-                <a href="MiAuth.html">
+                <a href="../snippet/MiAuth.html">
             
                     
                     MiAuth
@@ -906,9 +906,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.5" data-path="Nim メタプロ.html">
+        <li class="chapter " data-level="7.5" data-path="../snippet/Nim メタプロ.html">
             
-                <a href="Nim メタプロ.html">
+                <a href="../snippet/Nim メタプロ.html">
             
                     
                     Nim メタプロ
@@ -919,9 +919,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="中国語メモ.html">
+        <li class="chapter " data-level="7.6" data-path="../snippet/中国語メモ.html">
             
-                <a href="中国語メモ.html">
+                <a href="../snippet/中国語メモ.html">
             
                     
                     中国語メモ
@@ -932,7 +932,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.7" data-path="言語モデルを自作する方法(ChatGPT著">
+        <li class="chapter " data-level="7.7" data-path="../snippet/言語モデルを自作する方法(ChatGPT著">
             
                 <span>
             
@@ -975,7 +975,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Nim メタプロ</a>
+        <a href=".." >HonKit</a>
     </h1>
 </div>
 
@@ -990,39 +990,105 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>マクロとテンプレート</p>
+                                <p>HonKitとは、旧GitBook<sup><a href="#fn_1" id="reffn_1">1</a></sup>をforkして開発されているMarkDownナレッジツールです。
+HonKitを使うことでMarkDownベースのドキュメントサイトを簡単に生成することができます。</p>
+<h2 id="ファイル構造">ファイル構造</h2>
+<p>HonKitは以下のようなファイル構造になっているMarkDownファイルをレンダリングしてサイトにする。</p>
+<pre><code>article
+├── README.md
+├── SUMMARY.md
+├── Deno
+│   ├── deno_tui使い方メモ.md
+│   └── README.md
+├── Denoハンズオン
+|   ├── README.md
+│   ├── Denoの環境構築.md
+│   ├── Denoハンズオン.md
+│   ├── Denoハンズオン例題.md
+│   └── 簡単TypeScript入門.md
+└── VRCメモ
+    ├── README.md
+    ├── img
+    └── Tolass_custom.md
+</code></pre><p>主なルールは、</p>
 <ul>
-<li><p>テンプレート
-単純な文字列置換。Cのプリプロセスに近いがASTが考慮される。オーバーヘッドが無いので便利。</p>
-</li>
-<li><p>マクロ
-ASTを操作できる。強力。扱いに注意。</p>
-</li>
+<li>ディレクトリごとにカテゴライズされている</li>
+<li>それぞれのディレクトリには必ず<strong>README.md</strong>が存在する</li>
+<li>SUMMARY.mdでサイト構造を定義する</li>
 </ul>
-<h3 id="生成方法">生成方法</h3>
+<p>の3つ。非常にシンプルになっている。また、このディレクトリ構図はGitHub上で各ディレクトリを見た際に、<strong>README.mdがトップとして表示される</strong>。
+宣伝ではあるが、拙作の<a href="https://github.com/ablaze-MIRAI/wikitool" target="_blank">wikitool</a>でも活用することができる。</p>
+<p>3つ目の<code>SUMMARY.md</code>はサイドバーに表示されるリンクを定義するもので、<strong>これを正しく設定しないと記事のリンクが表示されずアクセス出来ない</strong>ので気をつける。
+ただとてつもなく面倒なので、<a href="#プラグイン">後述するように</a><code>SUMMARY.md</code>を自動生成するプラグインを導入するのがオススメ。</p>
+<h2 id="セットアップ">セットアップ</h2>
+<p>npmプロジェクトをセットアップ</p>
 <ul>
-<li><p>AST直ざわり
-プログラマブルにプログラムを構築できる。可読性は低い。デバッグが困難。</p>
-</li>
-<li><p>文字列をASTに起こす
-生成するプログラム部分が全て文字列なためデバッグが困難。インデントも揃わない。地獄。</p>
-</li>
-<li><p>quoteマクロを使う
-生成するマクロをそのまま書き込める。可読性が一番高い。デバッグしやすい。最有力手。</p>
-</li>
+<li><code>npm init</code>
+HonKitプロジェクトを作成</li>
+<li><code>npx honkit init</code>
+HonKitをプレビューする。<a href="http://localhost:4000" target="_blank">http://localhost:4000</a>で見ることができる。</li>
+<li><code>npx honkit serve</code>
+HonKitをビルドする。ビルド成果物は<code>_book</code>ディレクトリに格納されています。</li>
+<li><code>npx honkit build</code></li>
 </ul>
-<h3 id="サンプル">サンプル</h3>
-<pre><code class="lang-nim">macro outerProc(name, block: untyped): untyped =
-  quote do:
-    proc `name`() =
-      `body`
-outerProc myfunc:
-  echo &quot;hey!&quot;
+<h2 id="ビルド">ビルド</h2>
+<p>前述の通り、HonKitで作成されたサイトはビルドしてGitHub Pagesなどに静的サイトとしてホストできる。
+しかし、<strong>何故か任意のディレクトリに出力することが出来ない</strong>ので、自分は<code>build.sh</code>というスクリプトを作成してビルド処理を実行している。スクリプトは以下の通り</p>
+<pre><code class="lang-sh">#! /usr/bin/env bash
 
-myfunc
-
-# stdout: hey!
+rm -r ./docs
+npx honkit build
+mv _book ./docs
 </code></pre>
+<h2 id="設定">設定</h2>
+<p>HonKitはプロジェクト内にある<code>book.json</code>というファイルを読み込むので、そこに設定を記述することでHonKitの挙動を制御出来る。
+以下は自分のHonKitの設定。特に難しいものは無いけれど、簡単な説明も添えておく。</p>
+<pre><code>{
+  &quot;title&quot;: &quot;Note&quot;,
+  &quot;author&quot;: &quot;Comamoca&quot;,
+  &quot;root&quot;: &quot;./article&quot;,
+  &quot;language&quot;: &quot;ja&quot;,
+  &quot;plugins&quot;: [
+    &quot;honkit-plugin-mermaid&quot;,
+    &quot;summary&quot;
+  ]
+}
+</code></pre><ul>
+<li>title
+ドキュメントサイトのタイトル</li>
+<li>author
+ドキュメントを作成した人を指定する</li>
+<li>root
+ドキュメントのルートになるディレクトリを指定する</li>
+<li>language
+サイトの言語を設定する</li>
+<li>plugins
+読み込むプラグインを指定する。詳しくは<a href="#プラグイン">プラグイン</a>を参照。</li>
+</ul>
+<h2 id="プラグイン">プラグイン</h2>
+<p>HonKitのプラグインは単一のnpmパッケージになっている。
+また、HonKitはGitBookをforkしているので、<strong>GitBookのプラグインをそのまま読み込むことが出来る</strong>。</p>
+<p>プラグインのセットアップ手順は以下の通り</p>
+<ul>
+<li><code>npm install プラグイン名のパッケージ名</code>
+<code>book.json</code>を作成して、以下のように記述する。<pre><code class="lang-json">{
+&quot;plugins&quot;: [
+  &quot;プラグイン名&quot;,
+]
+}
+</code></pre>
+プラグイン名はプラグインのパッケージ名と異なっていることが多いので、READMEなどを読んでよく確認する。</li>
+</ul>
+<p>自分は以下のプラグインを使っている。</p>
+<ul>
+<li>honkit-plugin-mermaid
+HonKitにmermaidのレンダリング機能を追加する</li>
+<li>gitbook-plugin-summary
+SUMMARY.mdを自動生成する</li>
+</ul>
+<blockquote id="fn_1">
+<sup>1</sup>. 現在最新版は非公開になり、GitBookはクラウドベースのサービスになっています。<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
 
                                 
                                 </section>
@@ -1050,12 +1116,12 @@ myfunc
 
             
                 
-                <a href="MiAuth.html" class="navigation navigation-prev " aria-label="Previous page: MiAuth">
+                <a href="../Haxe/Haxeのビルドまとめ.html" class="navigation navigation-prev " aria-label="Previous page: Haxeのビルドまとめ">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="中国語メモ.html" class="navigation navigation-next " aria-label="Next page: 中国語メモ">
+                <a href="../Lua/" class="navigation navigation-next " aria-label="Next page: Lua">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1066,7 +1132,7 @@ myfunc
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Nim メタプロ","level":"7.5","depth":1,"next":{"title":"中国語メモ","level":"7.6","depth":1,"path":"snippet/中国語メモ.md","ref":"snippet/中国語メモ.md","articles":[]},"previous":{"title":"MiAuth","level":"7.4","depth":1,"path":"snippet/MiAuth.md","ref":"snippet/MiAuth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"snippet/Nim メタプロ.md","mtime":"2023-06-03T13:38:04.516Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-06T07:17:51.139Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HonKit","level":"2.23","depth":1,"next":{"title":"Lua","level":"2.24","depth":1,"path":"Lua/README.md","ref":"Lua/README.md","articles":[]},"previous":{"title":"Haxeのビルドまとめ","level":"2.22","depth":1,"path":"Haxe/Haxeのビルドまとめ.md","ref":"Haxe/Haxeのビルドまとめ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"HonKit/README.md","mtime":"2023-06-06T07:12:37.547Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-06T07:17:51.139Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

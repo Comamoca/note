@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>Nim メタプロ · Note</title>
+        <title>Ruby · Note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 4.0.7">
@@ -60,10 +60,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="中国語メモ.html" />
+    <link rel="next" href="../Tips/ryeを使ったDjangoセットアップ.html" />
     
     
-    <link rel="prev" href="MiAuth.html" />
+    <link rel="prev" href="../Obsidianハンズオン/Obsidianを使ってみよう.html" />
     
 
     </head>
@@ -742,9 +742,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../Ruby/">
+        <li class="chapter active" data-level="4.2" data-path="./">
             
-                <a href="../Ruby/">
+                <a href="./">
             
                     
                     Ruby
@@ -854,9 +854,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="./">
+        <li class="chapter " data-level="7.1" data-path="../snippet/">
             
-                <a href="./">
+                <a href="../snippet/">
             
                     
                     Snippet
@@ -867,9 +867,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="BERT Q&A.html">
+        <li class="chapter " data-level="7.2" data-path="../snippet/BERT Q&A.html">
             
-                <a href="BERT Q&A.html">
+                <a href="../snippet/BERT Q&A.html">
             
                     
                     BERT Q&A
@@ -880,9 +880,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.3" data-path="GoでCLI兼ライブラリを作る.html">
+        <li class="chapter " data-level="7.3" data-path="../snippet/GoでCLI兼ライブラリを作る.html">
             
-                <a href="GoでCLI兼ライブラリを作る.html">
+                <a href="../snippet/GoでCLI兼ライブラリを作る.html">
             
                     
                     GoでCLI兼ライブラリを作る
@@ -893,9 +893,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.4" data-path="MiAuth.html">
+        <li class="chapter " data-level="7.4" data-path="../snippet/MiAuth.html">
             
-                <a href="MiAuth.html">
+                <a href="../snippet/MiAuth.html">
             
                     
                     MiAuth
@@ -906,9 +906,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.5" data-path="Nim メタプロ.html">
+        <li class="chapter " data-level="7.5" data-path="../snippet/Nim メタプロ.html">
             
-                <a href="Nim メタプロ.html">
+                <a href="../snippet/Nim メタプロ.html">
             
                     
                     Nim メタプロ
@@ -919,9 +919,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="中国語メモ.html">
+        <li class="chapter " data-level="7.6" data-path="../snippet/中国語メモ.html">
             
-                <a href="中国語メモ.html">
+                <a href="../snippet/中国語メモ.html">
             
                     
                     中国語メモ
@@ -932,7 +932,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.7" data-path="言語モデルを自作する方法(ChatGPT著">
+        <li class="chapter " data-level="7.7" data-path="../snippet/言語モデルを自作する方法(ChatGPT著">
             
                 <span>
             
@@ -975,7 +975,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Nim メタプロ</a>
+        <a href=".." >Ruby</a>
     </h1>
 </div>
 
@@ -990,40 +990,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>マクロとテンプレート</p>
-<ul>
-<li><p>テンプレート
-単純な文字列置換。Cのプリプロセスに近いがASTが考慮される。オーバーヘッドが無いので便利。</p>
-</li>
-<li><p>マクロ
-ASTを操作できる。強力。扱いに注意。</p>
-</li>
-</ul>
-<h3 id="生成方法">生成方法</h3>
-<ul>
-<li><p>AST直ざわり
-プログラマブルにプログラムを構築できる。可読性は低い。デバッグが困難。</p>
-</li>
-<li><p>文字列をASTに起こす
-生成するプログラム部分が全て文字列なためデバッグが困難。インデントも揃わない。地獄。</p>
-</li>
-<li><p>quoteマクロを使う
-生成するマクロをそのまま書き込める。可読性が一番高い。デバッグしやすい。最有力手。</p>
-</li>
-</ul>
-<h3 id="サンプル">サンプル</h3>
-<pre><code class="lang-nim">macro outerProc(name, block: untyped): untyped =
-  quote do:
-    proc `name`() =
-      `body`
-outerProc myfunc:
-  echo &quot;hey!&quot;
-
-myfunc
-
-# stdout: hey!
-</code></pre>
-
+                                
                                 
                                 </section>
                             
@@ -1050,12 +1017,12 @@ myfunc
 
             
                 
-                <a href="MiAuth.html" class="navigation navigation-prev " aria-label="Previous page: MiAuth">
+                <a href="../Obsidianハンズオン/Obsidianを使ってみよう.html" class="navigation navigation-prev " aria-label="Previous page: Obsidianを使ってみよう">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="中国語メモ.html" class="navigation navigation-next " aria-label="Next page: 中国語メモ">
+                <a href="../Tips/ryeを使ったDjangoセットアップ.html" class="navigation navigation-next " aria-label="Next page: Ryeを使ったDjangoセットアップ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1066,7 +1033,7 @@ myfunc
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Nim メタプロ","level":"7.5","depth":1,"next":{"title":"中国語メモ","level":"7.6","depth":1,"path":"snippet/中国語メモ.md","ref":"snippet/中国語メモ.md","articles":[]},"previous":{"title":"MiAuth","level":"7.4","depth":1,"path":"snippet/MiAuth.md","ref":"snippet/MiAuth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"snippet/Nim メタプロ.md","mtime":"2023-06-03T13:38:04.516Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-06T07:17:51.139Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ruby","level":"4.2","depth":1,"next":{"title":"Ryeを使ったDjangoセットアップ","level":"5.1","depth":1,"path":"Tips/ryeを使ったDjangoセットアップ.md","ref":"Tips/ryeを使ったDjangoセットアップ.md","articles":[]},"previous":{"title":"Obsidianを使ってみよう","level":"4.1","depth":1,"path":"Obsidianハンズオン/Obsidianを使ってみよう.md","ref":"Obsidianハンズオン/Obsidianを使ってみよう.md","articles":[]},"dir":"neutral"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"Ruby/README.md","mtime":"2023-06-04T09:26:17.825Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-06T07:17:51.139Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
