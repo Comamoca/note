@@ -828,14 +828,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>GleamでOTPフレームワークを使うためのライブラリ
-(OTPフレームワークについては<a href="https://elixirschool.com/ja/lessons/advanced/otp_distribution" target="_blank">Elixir School</a>がわかりやすい)
-実装例についてはGleam OTPのtestが分かりやすい。</p>
-<h2 id="actor">Actor</h2>
-<p><a href="https://hexdocs.pm/gleam_otp/gleam/otp/actor.html" target="_blank">ドキュメント</a>
-Elixirの</p>
-<h2 id="supervisor">Supervisor</h2>
-<p><a href="https://hexdocs.pm/gleam_otp/0.1.3/gleam/otp/supervisor/" target="_blank">ドキュメント</a>にあるように、所定の型に沿った関数などを実装していき、<code>start_spec()</code>で起動する。</p>
+                                <p>ErlangのOTPフレームワークを使うと、耐障害性の高いアプリケーションを楽に開発できる。
+ここではGleamからOTPフレームワークを使い、そのようなアプリケーションを作る方法をメモしていく。</p>
+<h2 id="glemaからotpにアクセスする">GlemaからOTPにアクセスする</h2>
+<p>GleamにはOTPフレームワークを扱うためのライブラリがある。
+<a href="https://github.com/gleam-lang/otp" target="_blank">リポジトリ</a></p>
+<p>これを使うことでSupervisorなどの機能にアクセス出来る。</p>
+<h2 id="用語の整理">用語の整理</h2>
+<h3 id="process">Process</h3>
+<p>OTPの最下位の構成要素で、他のアクターは全てプロセス上に構築される。しかしProcessはGleamではあまり使われず、より多くの機能を提供する他のアクタータイプが使われる。</p>
+<p>詳しくは<a href="obsidian://open?vault=note&amp;file=article%2FGleam%2FProcess" target="_blank">ここ</a>を参照。</p>
+<h3 id="actor">Actor</h3>
+<p>Gleamで最も一般的に使用されるインターフェース。ErlangのGenServerと同様に、OTPからのメッセージを自動的に処理する。
+GenServerなどの名称を使っていない理由は、GleamのActorはGenServerと違い型付けされたAPIを提供していて大きく違うかららしい。</p>
+<p>詳しくは<a href="obsidian://open?vault=note&amp;file=article%2FGleam%2FActor" target="_blank">ここ</a>を参照。</p>
+<h3 id="task">Task</h3>
+<p>単一のタスクを実行してからシャットダウンするプロセスの一種。タスクは、プログラムを並列化することによって逐次的な処理を並列処理にするために使われる。</p>
+<p>詳しくは<a href="obsidian://open?vault=note&amp;file=article%2FGleam%2FTask" target="_blank">ここ</a>を参照。</p>
+<h3 id="supervisor">Supervisor</h3>
+<p><code>Process</code>のグループを開始して監視し、クラッシュした場合には<code>Process</code>を再起動する。<code>Supervisor</code>は<code>Supervisor</code>を管理することができ、階層上の<code>Process</code>を構築することでGleamプログラムの耐障害性を高めることができる。</p>
+<p>詳しくは<a href="obsidian://open?vault=note&amp;file=article%2FGleam%2FSupervisor" target="_blank">ここ</a>を参照。</p>
+<p>公式のトップにある階層図は以下のようになっている。</p>
+<pre><code class="lang-mermaid"><div class="mermaid">graph TB
+
+Process--&gt;Actor
+Process--&gt;Task
+Task--&gt;Supervisor
+</div></code></pre>
+<h2 id="実際の使用例">実際の使用例</h2>
+<p>リポジトリの<code>test</code>モジュールにあるプログラムが確実に動くサンプルとして有効。</p>
 
                                 
                                 </section>
@@ -879,7 +900,7 @@ Elixirの</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gleam OTP","level":"2.5.1","depth":2,"next":{"title":"Gleam Pakeages","level":"2.5.2","depth":2,"path":"Gleam/Gleam Pakeages.md","ref":"./Gleam/Gleam Pakeages.md","articles":[]},"previous":{"title":"Gleam","level":"2.5","depth":1,"path":"Gleam/README.md","ref":"./Gleam/README.md","articles":[{"title":"Gleam OTP","level":"2.5.1","depth":2,"path":"Gleam/Gleam OTP.md","ref":"./Gleam/Gleam OTP.md","articles":[]},{"title":"Gleam Pakeages","level":"2.5.2","depth":2,"path":"Gleam/Gleam Pakeages.md","ref":"./Gleam/Gleam Pakeages.md","articles":[]},{"title":"nakaiメモ","level":"2.5.3","depth":2,"path":"Gleam/nakaiメモ.md","ref":"./Gleam/nakaiメモ.md","articles":[]},{"title":"逆引きGleam","level":"2.5.4","depth":2,"path":"Gleam/逆引きGleam.md","ref":"./Gleam/逆引きGleam.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"Gleam/Gleam OTP.md","mtime":"2023-06-03T13:38:04.506Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-04T09:29:31.002Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gleam OTP","level":"2.5.1","depth":2,"next":{"title":"Gleam Pakeages","level":"2.5.2","depth":2,"path":"Gleam/Gleam Pakeages.md","ref":"./Gleam/Gleam Pakeages.md","articles":[]},"previous":{"title":"Gleam","level":"2.5","depth":1,"path":"Gleam/README.md","ref":"./Gleam/README.md","articles":[{"title":"Gleam OTP","level":"2.5.1","depth":2,"path":"Gleam/Gleam OTP.md","ref":"./Gleam/Gleam OTP.md","articles":[]},{"title":"Gleam Pakeages","level":"2.5.2","depth":2,"path":"Gleam/Gleam Pakeages.md","ref":"./Gleam/Gleam Pakeages.md","articles":[]},{"title":"nakaiメモ","level":"2.5.3","depth":2,"path":"Gleam/nakaiメモ.md","ref":"./Gleam/nakaiメモ.md","articles":[]},{"title":"逆引きGleam","level":"2.5.4","depth":2,"path":"Gleam/逆引きGleam.md","ref":"./Gleam/逆引きGleam.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["honkit-plugin-mermaid"],"root":"./article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"honkit-plugin-mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Comamoca","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"ja","gitbook":"*"},"file":{"path":"Gleam/Gleam OTP.md","mtime":"2023-06-06T07:12:37.547Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-06-06T07:13:15.414Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
