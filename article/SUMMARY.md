@@ -2,7 +2,6 @@
 
 - [So Vits Svc&RVC](AIノート/So-vits-svc&RVC/README.md)
 
-    - [REDME](AIノート/So-vits-svc&RVC/REDME.md)
     - [So Vits Svc](AIノート/So-vits-svc&RVC/So-vits-svc.md)
 - [Stable Diffusion]()
     - [AIノート](AIノート/Stable Diffusion/AIノート.md)
@@ -89,4 +88,4 @@
 - [MiAuth](snippet/MiAuth.md)
 - [Nim メタプロ](snippet/Nim メタプロ.md)
 - [中国語メモ](snippet/中国語メモ.md)
-- [言語モデルを自作する方法(ChatGPT著)](snippet/言語モデルを自作する方法(ChatGPT著).md)
+- [言語モデルを自作する方法 By ChatGPT](snippet/言語モデルを自作する方法 by ChatGPT.md)
