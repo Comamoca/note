@@ -13,62 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Gleam/Gleam Pakeages.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34ca5e6afb0508ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BERT Q&A.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1c5fd48028c0c07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a5256c35de7f2656",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Gleam/Tips.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2663541324f6c2de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Gleam/elliメモ.md",
+                "file": "article/HonKit/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 227.5,
+    "collapsed": true
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -142,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
+                "file": "article/HonKit/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
+                "file": "article/HonKit/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md"
+                "file": "article/HonKit/README.md"
               }
             }
           }
@@ -203,52 +155,53 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "a1c5fd48028c0c07",
+  "active": "8a0a2e4ddf6d2c86",
   "lastOpenFiles": [
-    "article/Gleam/Tips.md",
-    "article/Tips/ryeを使ったDjangoセットアップ.md",
-    "article/imgs/Pasted image 20230601155411.png",
-    "article/Gleam/elliメモ.md",
-    "BERT Q&A.md",
-    "article/Gleam/逆引きGleam.md",
-    "article/Tips",
-    "article/Gleam/Gleam Pakeages.md",
+    "article/Coordination/README.md",
+    "article/HonKit/README.md",
+    "article/Coordination",
+    "article/Gleam/Supervisor.md",
+    "article/HonKit",
+    "article/Gleam/Process.md",
     "article/Gleam/Gleam OTP.md",
-    "article/Gleam/README.md",
-    "article/Gleam/nakaiメモ.md",
-    "article/Unity/トゥーンレンダリング.md",
-    "article/Unity/AnimeToolbox.md",
-    "article/Ruby/シェル芸の為のRuny入門.md",
-    "article/Ruby/README.md",
-    "article/Ruby",
-    "article/Unity/MMDアニメーションメモ.md",
-    "article/Unity/README.md",
-    "article/Unity",
+    "article/Gleam/Actor.md",
+    "article/Gleam/elliメモ.md",
+    "article/Gleam/Task.md",
+    "article/Gleam/GleamでOTPを使ったアプリケーションの構築.md",
+    "article/Gleam/Gleam Pakeages.md",
     "article/Lua/README.md",
-    "article/Lua/Teal.md",
-    "article/Lua",
-    "article/Haxe/Haxeのビルドまとめ.md",
-    "article/imgs/Pasted image 20230522013648.png",
-    "Tetatail.md",
-    "モデルカード下書き.md",
-    "言語モデルを自作する方法(ChatGPT著).md",
-    "Stable Diffusion エラーメモ.md",
-    "article/Haxe/README.md",
-    "article/Haxe",
-    "article/AIノート/So-vits-svc&RVC/So-vits-svc.md",
-    "article/AIノート/So-vits-svc&RVC/REDME.md",
-    "article/Gleam",
-    "article/AIノート/So-vits-svc&RVC",
-    "article/AIノート/Stable Diffusion",
-    "article/Deno",
-    "article/爆殺Python",
-    "article/imgs/00149-1678988093.png",
-    "article/imgs/00051-377179372.png",
-    "article/imgs/00038-4158102242.png",
-    "article/imgs/Pasted image 20230312074518.png",
-    "article/imgs/Pasted image 20230307185554.png",
-    "article/imgs/Pasted image 20230307185707.png",
-    "article/imgs/Pasted image 20230307131436.png",
-    "article/imgs/Pasted image 20230307185824.png"
+    "test.mjs",
+    "pnpm-lock.yaml",
+    "package.json",
+    "docs/Elixir/programs/test/test_helper.exs",
+    "docs/Elixir/programs/test/programs_test.exs",
+    "docs/Elixir/programs/lib/programs.ex",
+    "docs/gitbook/fonts/fontawesome/FontAwesome.otf",
+    "docs/gitbook/fonts/fontawesome/fontawesome-webfont.ttf",
+    "docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg",
+    "docs/Elixir/programs/README.md",
+    "docs/gitbook/images/apple-touch-icon-precomposed-152.png",
+    "docs/AIノート/So-vits-svc&RVC/REDME.md",
+    "docs/Unity/README.md",
+    "docs/Unity/トゥーンレンダリング.md",
+    "docs/Unity/AnimeToolbox.md",
+    "docs/Unity/MMDアニメーションメモ.md",
+    "docs/snippet/言語モデルを自作する方法(ChatGPT著).md",
+    "docs/Tips/ryeを使ったDjangoセットアップ.md",
+    "docs/Ruby/README.md",
+    "docs/imgs/Pasted image 20230522013648.png",
+    "docs/imgs/Pasted image 20230312074518.png",
+    "docs/imgs/Pasted image 20230601155411.png",
+    "docs/imgs/Pasted image 20230308022240.png",
+    "docs/imgs/Pasted image 20230308022258.png",
+    "docs/imgs/Pasted image 20230308002926.png",
+    "docs/imgs/Pasted image 20230308022234.png",
+    "docs/imgs/Pasted image 20230307203058.png",
+    "docs/Gleam/Tips.md",
+    "docs/Gleam/elliメモ.md",
+    "article/snippet/言語モデルを自作する方法(ChatGPT著).md",
+    "article/snippet/README.md",
+    "article/snippet/BERT Q&A.md",
+    "article/VRCメモ/Tolass_custom.md"
   ]
 }
