@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="{{ config.language }}" {% if page.dir == "rtl" %}dir="rtl"{% endif %}>
+    <head>
+        <meta charset="UTF-8">
+        <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"></head>
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="{{ file.path | replace('.md', '.html') }}">
+        <meta property="og:image" content="https://r2.comamoca.dev/ogp.jpg">
+        <meta property="og:title" content="[{{ config.title | {{ page.title }}">
+        <meta property="og:description" content="{{ config.description }}">
+        <meta property="og:locale" content="{{ config.language }}">
+
+        <title>[{{ config.title | d("HonKit", true) }}] {{ page.title }}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="{{ config.description }}">
+        <meta name="generator" content="HonKit {{ gitbook.version }}">
+        {% if config.author %}<meta name="author" content="{{ config.author }}">{% endif %}
+        {% if config.isbn %}<meta name="identifier" content="{{ config.isbn }}" scheme="ISBN">{% endif %}
+        {% block style %}
+            {% for resource in plugins.resources.css %}
+                {% if resource.url %}
+                <link rel="stylesheet" href="{{ resource.url }}">
+                {% else %}
+                <link rel="stylesheet" href="{{ resource.path|resolveAsset }}">
+                {% endif %}
+            {% endfor %}
+        {% endblock %}
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascript %}{% endblock %}
+    </body>
+</html>
