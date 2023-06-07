@@ -1,22 +1,29 @@
 <!DOCTYPE HTML>
-<html lang="{{ config.language }}" {% if page.dir=="rtl" %}dir="rtl" {% endif %}>
+<html lang="{{ config.language }}" {% if page.dir=="rtl" %}dir="rtl" {% endif %} prefix="og: http://ogp.me/ns#">
 
 <head>
 	<meta charset="UTF-8">
 
-	<meta property="og:title" content="Note">
-	<meta property="og:description" content="This is My Note">
-	<meta property="og:type" content="article">
-	<!-- <meta property="og:url" content="page url"> -->
-	<meta property="og:image" content="https://r2.comamoca.dev/ogp.jpg">
-	<meta property="og:site_name" content="Note">
-	<meta property="og:locale" content="ja_JP">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@Comamoca_">
+	<meta name="title" content="{% block title %}{{ config.title|d(" HonKit", true) }}{% endblock %}">
+	<meta name="description" content="This is My Note.">
 
-	<title>[{{ config.title | d("HonKit", true) }}] {{ page.title }}</title>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://note.comamoca.dev">
+	<meta property="og:title" content="{% block title %}{{ config.title|d(">
+	<meta property="og:description" content="This is My Note.">
+	<meta property="og:image" content="https://r2.comamoca.dev/ogp.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://note.comamoca.dev">
+	<meta property="twitter:title" content="Note">
+	<meta property="twitter:description" content="This is My Note.">
+	<meta property="twitter:image" content="https://r2.comamoca.dev/ogp.jpg">
+
+	<title>{% block title %}{{ config.title|d("HonKit", true) }}{% endblock %}</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="{{ config.description }}">
+	<meta name="description" content="{% block description %}{% endblock %}">
 	<meta name="generator" content="HonKit {{ gitbook.version }}">
 	{% if config.author %}
 	<meta name="author" content="{{ config.author }}">{% endif %}
