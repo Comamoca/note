@@ -7,39 +7,50 @@
 	<meta name="title" content="{% block title %}{{ config.title|d(" HonKit", true) }}{% endblock %}">
 	<meta name="description" content="This is My Note.">
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://note.comamoca.dev">
-	<meta property="og:title" content="{% block title %}{{ config.title|d(">
-	<meta property="og:description" content="This is My Note.">
-	<meta property="og:image" content="https://r2.comamoca.dev/ogp.jpg">
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://note.comamoca.dev">
-	<meta property="twitter:title" content="Note">
-	<meta property="twitter:description" content="This is My Note.">
-	<meta property="twitter:image" content="https://r2.comamoca.dev/ogp.jpg">
+		<meta property="og:title" content="Note" />
+		<meta property="og:url" content="https://note.comamoca.dev" />
+		<meta property="og:image" content="https://r2.comamoca.dev/ogp.jpg" />
+		<meta property="og:description" content="This is My Note." />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Note" />
 
-	<title>{% block title %}{{ config.title|d("HonKit", true) }}{% endblock %}</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="{% block description %}{% endblock %}">
-	<meta name="generator" content="HonKit {{ gitbook.version }}">
-	{% if config.author %}
-	<meta name="author" content="{{ config.author }}">{% endif %}
-	{% if config.isbn %}
-	<meta name="identifier" content="{{ config.isbn }}" scheme="ISBN">{% endif %}
-	{% block style %}
-	{% for resource in plugins.resources.css %}
-	{% if resource.url %}
-	<link rel="stylesheet" href="{{ resource.url }}">
-	{% else %}
-	<link rel="stylesheet" href="{{ resource.path|resolveAsset }}">
-	{% endif %}
-	{% endfor %}
-	{% endblock %}
-	{% block head %}{% endblock %}
-</head>
+		<link rel="canonical" href="https://comamoca.pages.dev/">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://note.comamoca.dev">
+		<meta property="og:title" content="{% block title %}{{ config.title|d(">
+		<meta property="og:description" content="This is My Note.">
+		<meta property="og:image" content="https://r2.comamoca.dev/ogp.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://note.comamoca.dev">
+		<meta property="twitter:title" content="Note">
+		<meta property="twitter:description" content="This is My Note.">
+		<meta property="twitter:image" content="https://r2.comamoca.dev/ogp.jpg">
+
+		<title>{% block title %}{{ config.title|d("HonKit", true) }}{% endblock %}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="{% block description %}{% endblock %}">
+		<meta name="generator" content="HonKit {{ gitbook.version }}">
+		{% if config.author %}
+		<meta name="author" content="{{ config.author }}">{% endif %}
+		{% if config.isbn %}
+		<meta name="identifier" content="{{ config.isbn }}" scheme="ISBN">{% endif %}
+		{% block style %}
+		{% for resource in plugins.resources.css %}
+		{% if resource.url %}
+		<link rel="stylesheet" href="{{ resource.url }}">
+		{% else %}
+		<link rel="stylesheet" href="{{ resource.path|resolveAsset }}">
+		{% endif %}
+		{% endfor %}
+		{% endblock %}
+		{% block head %}{% endblock %}
+	</head>
 
 <body>
 	{% block body %}{% endblock %}
