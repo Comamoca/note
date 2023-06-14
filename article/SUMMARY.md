@@ -77,7 +77,7 @@
 
 ## VRCメモ
 
-- [Tolass Custom](VRCメモ/Tolass_custom.md)
+- [Tolass Custom](VRChat/Tolass_custom.md)
 
 ## Imgs
 
