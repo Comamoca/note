@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/VRChat/アバターのQuest対応.md",
+                "file": "article/Lua/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8870e1c3f74b3194",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevContainer/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0885fb2510dc1ab0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevContainer/コンテナの構築.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/VRChat/アバターのQuest対応.md",
+                "file": "DevContainer/コンテナの構築.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/VRChat/アバターのQuest対応.md",
+                "file": "DevContainer/コンテナの構築.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/VRChat/アバターのQuest対応.md"
+                "file": "DevContainer/コンテナの構築.md"
               }
             }
           }
@@ -154,15 +179,19 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "6e68accd6d8be4d2",
+  "active": "0885fb2510dc1ab0",
   "lastOpenFiles": [
+    "DevContainer/README.md",
+    "DevContainer/コンテナの構築.md",
+    "article/Coordination/README.md",
+    "DevContainer",
+    "article/Lua/README.md",
+    "article/Lua/Teal.md",
+    "article/VRChat/アバターのQuest対応.md",
     "article/VRChat/World.md",
     "Cotowali/Cotowali.md",
     "ogp.jpg",
-    "article/Lua/README.md",
     "Cotowali",
-    "article/Lua/Teal.md",
-    "article/VRChat/アバターのQuest対応.md",
     "article/VRChat/ワールド自作.md",
     "article/SUMMARY.md",
     "article/HonKit/README.md",
@@ -176,9 +205,7 @@
     "docs/Gleam/Task.html",
     "docs/Gleam/Supervisor.html",
     "docs/Gleam/Process.html",
-    "docs/Gleam/Actor.html",
     "article/snippet/言語モデルを自作する方法 by ChatGPT.md",
-    "article/Coordination/README.md",
     "article/Gleam/Supervisor.md",
     "article/Gleam/Process.md",
     "article/Gleam/Gleam OTP.md",
@@ -193,7 +220,6 @@
     "docs/AIノート/So-vits-svc&RVC/REDME.md",
     "docs/Unity/README.md",
     "docs/Unity/トゥーンレンダリング.md",
-    "docs/Unity/AnimeToolbox.md",
     "docs/imgs/Pasted image 20230522013648.png",
     "docs/imgs/Pasted image 20230312074518.png",
     "docs/imgs/Pasted image 20230601155411.png",
