@@ -26,10 +26,10 @@
 
 ## Devcontainer
 - [Devcontainer](Devcontainer/README.md)
+- [コンテナの構築](Devcontainer/コンテナの構築.md)
 
 ## Elixir
 
-- [コンテナの構築](Devcontainer/コンテナの構築.md)
 - [Elixir](Elixir/README.md)
 
 - [Elixir始めたらとりあえず読んどけ](Elixir/Elixir始めたらとりあえず読んどけ.md)
