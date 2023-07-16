@@ -1,4 +1,4 @@
-DevContainerとは、Misrosoftが開発しているテキストエディタVisual Sutudio Code(以下VSCode)で扱える**開発環境をDocker上に構築するツール及びその仕様**です。
+Devcontainerとは、Misrosoftが開発しているテキストエディタVisual Sutudio Code(以下VSCode)で扱える**開発環境をDocker上に構築するツール及びその仕様**です。
 
 DevCotainerを使うことで以下の効果が期待できます。
 
@@ -7,4 +7,4 @@ DevCotainerを使うことで以下の効果が期待できます。
 - 開発環境をファイルで定義することでGitによる管理が行える
 - docker-composeを使うことでモックサーバなどを含めた開発環境の構築をスムースに行える
 
-また、DevContainerは仕様にもなっていてその参考実装としてDevContainerのCLI実装があります。
+また、Devcontainerは仕様にもなっていてその参考実装としてDevcontainerのCLI実装があります。
