@@ -98,6 +98,7 @@
 
 - [Tolass Custom](VRChat/Tolass_custom.md)
 - [World](VRChat/World.md)
+- [VRCで外部通信.md](VRChat/VRCで外部通信.md)
 - [アバターのQuest対応](VRChat/アバターのQuest対応.md)
 - [ワールド自作](VRChat/ワールド自作.md)
 
