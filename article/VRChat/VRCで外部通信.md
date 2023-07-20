@@ -2,8 +2,15 @@ VRCで外部通信を行う方法には大きく以下の2つがある
 
 - VRC_Panorama
 - OSC
+- Udon
 
-OSCはUDPかつローカルでの使用が多いらしいので、使えるAPIはVRC_Panoramaに限られてくる
+~~OSCはUDPかつローカルでの使用が多いらしいので、使えるAPIはVRC_Panoramaに限られてくる~~
+
+**2023/07/20追記**
+VRC_PanoramaはSDK2にある機能で、現在主流のSDK3では扱うことが出来ない。
+しかし、SDK3のVideoPlayerを使うことで、扱うコンテンツは動画になるが似たような機能を使うことが出来る。
+
+現時点(2023/07/20)では外部通信の方法として最も有力なのはUdonらしい。自分は宗教的な事情で特定のエディタしか使えないので、ここではUdonSharpについては書いていく。
 
 ## VRC_Panorama
 
@@ -37,3 +44,5 @@ ref: [別に画像を返さなくても良い](#別に画像を返さなくて�
 また画像を返すことで本来の機能である画像を表示させることも可能
 
 ref: [VRChatからVRC_Panoramaを使いESP-WROOM-02経由で外部機器を操作する](https://qiita.com/sh_akira/items/3ed79ce23fade2d3831d)
+
+## 
