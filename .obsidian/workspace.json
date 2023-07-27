@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Deno/Packages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Deno/Packages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/SUMMARY.md"
+                "file": "article/Deno/Packages.md"
               }
             }
           }
@@ -179,10 +179,10 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "3f2d69103a7157dd",
+  "active": "8870e1c3f74b3194",
   "lastOpenFiles": [
-    "article/Deno/Packages.md",
     "article/SUMMARY.md",
+    "article/Deno/Packages.md",
     "Deno/Package.md",
     "Deno",
     "article/Devcontainer/README.md",
