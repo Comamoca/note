@@ -17,7 +17,7 @@
 ## Deno
 - [Deno](Deno/README.md)
 - [Deno Tui使い方メモ](Deno/deno_tui使い方メモ.md)
-- [Package](Deno/Package.md)
+- [Packages](Deno/Packages.md)
 
 ## Denoハンズオン
 - [Denoの環境構築](Denoハンズオン/Denoの環境構築.md)
