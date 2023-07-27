@@ -3,7 +3,7 @@ Denoで使えるライブラリ集
 ## 型関連
 型に関係するライブラリ
 
-### ADataclass
+### Dataclass
 Typescript/Javascriptで構造体に近いデータ型を定義するための糖衣構文。
 
 https://github.com/alexeyraspopov/dataclass
