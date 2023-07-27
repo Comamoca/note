@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "article/SUMMARY.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5,
-    "collapsed": true
+    "width": 227.5
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -131,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "article/SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "article/SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Deno/Packages.md"
+                "file": "article/SUMMARY.md"
               }
             }
           }

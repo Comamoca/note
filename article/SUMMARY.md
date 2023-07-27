@@ -13,12 +13,10 @@
 ## Cotowali
 
 - [Cotowali](Cotowali/Cotowali.md)
-- [Deno](Deno/README.md)
-
-- [Deno Tui使い方メモ](Deno/deno_tui使い方メモ.md)
 
 ## Denoハンズオン
-
+- [Deno](Deno/README.md)
+- [Deno Tui使い方メモ](Deno/deno_tui使い方メモ.md)
 - [Denoの環境構築](Denoハンズオン/Denoの環境構築.md)
 - [Denoハンズオン](Denoハンズオン/Denoハンズオン.md)
 - [Denoハンズオン例題](Denoハンズオン/Denoハンズオン例題.md)
