@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6e68accd6d8be4d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Lua/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8870e1c3f74b3194",
             "type": "leaf",
             "state": {
@@ -30,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3f2d69103a7157dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/SUMMARY.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,11 +158,11 @@
   "lastOpenFiles": [
     "article/SUMMARY.md",
     "article/Deno/Packages.md",
+    "article/Lua/README.md",
     "Deno/Package.md",
     "Deno",
     "article/Devcontainer/README.md",
     "article/Deno/deno_tui使い方メモ.md",
-    "article/Lua/README.md",
     "article/VRChat/VRCで外部通信.md",
     "article/Devcontainer/コンテナの構築.md",
     "article/Coordination/README.md",
