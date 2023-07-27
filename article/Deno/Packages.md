@@ -28,6 +28,11 @@ https://github.com/lambdalisue/deno-unknownutil
 
 https://github.com/TheAlgorithms/TypeScript
 
+### Zod
+言わずと知れたTypeScriptのバリデーションライブラリ。
+
+https://github.com/colinhacks/zod
+
 ## フロントエンド
 Webサイトの構築などで使えるライブラリ/ツールなど
 
@@ -39,7 +44,7 @@ Webサイトの構築などで使えるライブラリ/ツールなど
 
 https://github.com/tw-in-js/twind
 
-### fresh
+### Fresh
 Deno公式のフルスタックWebフレームワーク。
 同じくDeno公式が提供しているデプロイサービス[Deno Deploy](https://deno.com/deploy)にてデプロイされることを想定して設計されている。
 
@@ -65,6 +70,26 @@ https://lume.land
 DenoとFreshで構築されているSaasテンプレート。SupabaseやStripeなどもサポートされている。
 
 https://deno.com/saaskit
+
+## Terminal
+ターミナルアプリケーションをつくるためのライブラリなど
+
+### Cliffy
+Denoでコマンドライン引数をパースするためのライブラリ。
+
+https://github.com/c4spar/deno-cliffy
+
+### Tool
+DenoのためのツールやDenoで作られたツールなど
+
+### dnt
+Deno公式が開発しているDenoで作られたパッケージをnpm向けに変換するためのツール。
+これを使うことでDeno firstなパッケージ開発をすることが出来るようになる。
+
+拙作のDeno/npmパッケージ`miauth.js`はこのツールを使ってDeno/npm両対応を実現している。
+これについては[Misskeyアドカレの記事](https://zenn.dev/comamoca/articles/about-miauthjs)でも触れているのでぜひ
+
+https://github.com/denoland/dnt
 
 ## API/サービス
 Denoで実装されたAPIやDenoに関連するAPIなど。
