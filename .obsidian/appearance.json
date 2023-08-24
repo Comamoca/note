@@ -1,8 +1,8 @@
 {
-  "accentColor": "#94d1b5",
+  "accentColor": "#a4f3f4",
   "theme": "moonstone",
   "interfaceFontFamily": "UDEV Gothic JPDOC",
-  "cssTheme": "Everforest",
+  "cssTheme": "Obsidian Nord",
   "baseFontSize": 16,
   "translucency": false,
   "showViewHeader": true,
