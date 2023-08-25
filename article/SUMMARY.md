@@ -78,8 +78,10 @@
 ## Obsidianハンズオン
 
 - [Obsidianを使ってみよう](Obsidianハンズオン/Obsidianを使ってみよう.md)
-- [Ruby](Ruby/README.md)
 
+## Ruby
+- [Ruby](Ruby/README.md)
+- [RubyでNeovimプラグインを書く](Ruby/RubyでNeovimプラグインを書く.md)
 
 ## Tips
 
