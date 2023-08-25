@@ -8,30 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "87e054fb8cd64bba",
+            "id": "6e68accd6d8be4d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/VRChat/Webカメラでフルトラッキング.md",
+                "file": "article/Lua/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ff2333a8195a0eb0",
+            "id": "8870e1c3f74b3194",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Gleam/逆引きGleam.md",
+                "file": "article/Devcontainer/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0885fb2510dc1ab0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Devcontainer/コンテナの構築.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -89,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5,
-    "collapsed": true
+    "width": 227.5
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/VRChat/Webカメラでフルトラッキング.md",
+                "file": "article/Devcontainer/コンテナの構築.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/VRChat/Webカメラでフルトラッキング.md",
+                "file": "article/Devcontainer/コンテナの構築.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/VRChat/Webカメラでフルトラッキング.md"
+                "file": "article/Devcontainer/コンテナの構築.md"
               }
             }
           }
@@ -167,32 +179,23 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "87e054fb8cd64bba",
+  "active": "8a0a2e4ddf6d2c86",
   "lastOpenFiles": [
-    "article/Gleam/逆引きGleam.md",
-    "article/VRChat/スマホでQuest単騎腰トラ.md",
-    "article/VRChat/Webカメラでフルトラッキング.md",
-    "article/VRChat/ワールド自作.md",
-    "article/VRChat/VRCで外部通信.md",
-    "article/VRChat/OSC.md",
-    "article/VRChat/README.md",
-    "article/VRChat/World.md",
-    "article/Deno/Packages.md",
-    "article/SUMMARY.md",
-    "article/Lua/README.md",
-    "Deno/Package.md",
-    "Deno",
     "article/Devcontainer/README.md",
-    "article/Deno/deno_tui使い方メモ.md",
     "article/Devcontainer/コンテナの構築.md",
     "article/Coordination/README.md",
     "article/Devcontainer",
+    "article/Lua/README.md",
     "article/Lua/Teal.md",
     "article/VRChat/アバターのQuest対応.md",
+    "article/VRChat/World.md",
     "article/Cotowali/Cotowali.md",
     "ogp.jpg",
     "article/Cotowali",
+    "article/VRChat/ワールド自作.md",
+    "article/SUMMARY.md",
     "article/HonKit/README.md",
+    "article/VRChat/README.md",
     "index.html",
     "article/README.md",
     "docs/HonKit/index.html",
@@ -201,13 +204,22 @@
     "docs/Gleam/Tips.html",
     "docs/Gleam/Task.html",
     "docs/Gleam/Supervisor.html",
+    "docs/Gleam/Process.html",
     "article/snippet/言語モデルを自作する方法 by ChatGPT.md",
     "article/Gleam/Supervisor.md",
     "article/Gleam/Process.md",
     "article/Gleam/Gleam OTP.md",
     "article/Gleam/Actor.md",
+    "article/Gleam/elliメモ.md",
+    "article/Gleam/Task.md",
+    "article/Gleam/GleamでOTPを使ったアプリケーションの構築.md",
+    "article/Gleam/Gleam Pakeages.md",
     "docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg",
+    "docs/Elixir/programs/README.md",
     "docs/gitbook/images/apple-touch-icon-precomposed-152.png",
+    "docs/AIノート/So-vits-svc&RVC/REDME.md",
+    "docs/Unity/README.md",
+    "docs/Unity/トゥーンレンダリング.md",
     "docs/imgs/Pasted image 20230522013648.png",
     "docs/imgs/Pasted image 20230312074518.png",
     "docs/imgs/Pasted image 20230601155411.png",

@@ -1,7 +1,8 @@
 {
   "mobileToolbarCommands": [
-    "editor:toggle-code",
     "editor:set-heading-2",
+    "editor:set-heading-3",
+    "editor:toggle-code",
     "editor:attach-file",
     "editor:insert-link",
     "editor:toggle-bullet-list",
