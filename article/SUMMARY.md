@@ -13,13 +13,12 @@
 ## Cotowali
 
 - [Cotowali](Cotowali/Cotowali.md)
-
-## Deno
 - [Deno](Deno/README.md)
+
 - [Deno Tui使い方メモ](Deno/deno_tui使い方メモ.md)
-- [Packages](Deno/Packages.md)
 
 ## Denoハンズオン
+
 - [Denoの環境構築](Denoハンズオン/Denoの環境構築.md)
 - [Denoハンズオン](Denoハンズオン/Denoハンズオン.md)
 - [Denoハンズオン例題](Denoハンズオン/Denoハンズオン例題.md)
@@ -102,6 +101,7 @@
 - [VRCで外部通信](VRChat/VRCで外部通信.md)
 - [アバターのQuest対応](VRChat/アバターのQuest対応.md)
 - [ワールド自作](VRChat/ワールド自作.md)
+- [衣装の着せ替え](VRChat/衣装の着せ替え.md)
 
 ## Imgs
 

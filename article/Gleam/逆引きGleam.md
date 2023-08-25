@@ -144,7 +144,8 @@ JavaScriptの場合
 pub external fn run() -> Int =
 	"./my-module.js" "run"
 ```
-関数を定義する際には以下のように引数に型を付けることも出来る。これを行うことでより堅牢なプログラムを書くことができる。ただしGleamはこの型付けを**完全に信用**するので、**型付けが間違っている場合は実行時エラーが発生する**ので気をつける。
+関数を定義する際には以下のように引数に型を付けることも出来る。これを行うことでより堅牢なプログラムを書くことができる。ただしGleamはこの型付けを**完全に信用**する。
+もし**型付けが間違っている場合は実行時エラーが発生する**ので気をつける。
 ```rust
 pub external fn any(in: List(a), satisfying: fn(a) -> Bool) =
   "my_external_module" "any"
@@ -166,3 +167,12 @@ Gleamは[Hex]()に対応しているので`gleam add`でGleamパッケージと�
 pub external fn gfm_to_html(text) -> Result(String, String) =
 "Elixir.Pandex" "gfm_to_html"
 ```
+
+## Javascriptターゲット
+
+GleamはJavascriptをターゲットにコンパイルすることが出来る。
+GleamをJavascriptにコンパイルするのは以下の2通りの方法で行うことが出来る。
+
+### ビルドオプションにJavascriptを指定
+
+`gleam run `
