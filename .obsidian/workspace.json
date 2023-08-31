@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7e26945b2119a40c",
+        "id": "70a3309c556f3a83",
         "type": "tabs",
         "children": [
           {
-            "id": "a0f4229b9857ba2e",
+            "id": "51b13d010f5caadf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "article/Deno/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4acc01143b283fe1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Deno/Packages.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "article/Deno/Packages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "article/Deno/Packages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +145,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "article/Deno/Packages.md"
+              }
             }
           }
         ]
@@ -146,15 +167,17 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "a0f4229b9857ba2e",
+  "active": "4acc01143b283fe1",
   "lastOpenFiles": [
+    "article/Deno/README.md",
+    "article/Deno/Packages.md",
+    "article/Deno/deno_tui使い方メモ.md",
+    "article/SUMMARY.md",
     "conflict-files-obsidian-git.md",
     "article/Deno/Packages.md",
-    "article/Deno/README.md",
     "article/VRChat/Webカメラでフルトラッキング.md",
     "article/VRChat/VRCで外部通信.md",
     "article/Denoハンズオン/簡単TypeScript入門.md",
-    "article/SUMMARY.md",
     "article/snippet/MiAuth.md",
     "VRChat",
     "README.md",
@@ -172,7 +195,6 @@
     "article/Lua/README.md",
     "Deno/Package.md",
     "Deno",
-    "article/Deno/deno_tui使い方メモ.md",
     "article/Devcontainer/コンテナの構築.md",
     "article/Devcontainer",
     "ogp.jpg",
