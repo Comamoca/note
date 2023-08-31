@@ -11,8 +11,12 @@
             "id": "ea063d3bd175af48",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "article/VRChat/Webカメラでフルトラッキング.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5,
-    "collapsed": true
+    "width": 227.5
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -90,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "article/VRChat/Webカメラでフルトラッキング.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "article/VRChat/Webカメラでフルトラッキング.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "article/VRChat/Webカメラでフルトラッキング.md"
+              }
             }
           }
         ]
@@ -149,10 +156,11 @@
   },
   "active": "ea063d3bd175af48",
   "lastOpenFiles": [
+    "article/VRChat/VRCで外部通信.md",
     "article/Denoハンズオン/簡単TypeScript入門.md",
     "article/SUMMARY.md",
     "article/snippet/MiAuth.md",
-    "VRChat/Webカメラでフルトラッキング.md",
+    "article/VRChat/Webカメラでフルトラッキング.md",
     "VRChat",
     "conflict-files-obsidian-git.md",
     "README.md",
@@ -166,7 +174,6 @@
     "article/Gleam/逆引きGleam.md",
     "article/VRChat/スマホでQuest単騎腰トラ.md",
     "article/VRChat/ワールド自作.md",
-    "article/VRChat/VRCで外部通信.md",
     "article/VRChat/OSC.md",
     "article/VRChat/README.md",
     "article/VRChat/World.md",
