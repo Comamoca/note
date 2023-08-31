@@ -1,3 +1,4 @@
+## AIノート
 - [AIノート](AIノート/README.md)
 
 - [So Vits Svc&RVC](AIノート/So-vits-svc&RVC/README.md)
@@ -13,8 +14,11 @@
 ## Cotowali
 
 - [Cotowali](Cotowali/Cotowali.md)
-- [Deno](Deno/README.md)
 
+## Deno
+
+- [Deno](Deno/README.md)
+- [Packages](Deno/Packages.md)
 - [Deno Tui使い方メモ](Deno/deno_tui使い方メモ.md)
 
 ## Denoハンズオン
@@ -29,20 +33,14 @@
 - [コンテナの構築](Devcontainer/コンテナの構築.md)
 
 ## Elixir
-
 - [Elixir](Elixir/README.md)
-
 - [Elixir始めたらとりあえず読んどけ](Elixir/Elixir始めたらとりあえず読んどけ.md)
 - [Mix事始め](Elixir/Mix事始め.md)
 - [Phoenix](Elixir/Phoenix.md)
 - [Programs](Elixir/programs/README.md)
 
-    - [Lib]()
-    - [Test]()
-
 ## Gleam
 - [Gleam](Gleam/README.md)
-
 - [Actor](Gleam/Actor.md)
 - [Gleam OTP](Gleam/Gleam OTP.md)
 - [Gleam Pakeages](Gleam/Gleam Pakeages.md)
@@ -56,10 +54,9 @@
 
 ## Haxe
 - [Haxe](Haxe/README.md)
-
 - [Haxeのビルドまとめ](Haxe/Haxeのビルドまとめ.md)
 
-## Honkit
+## HonKit
 - [HonKit](HonKit/README.md)
 
 ## Lua
@@ -88,25 +85,26 @@
 - [Ryeを使ったDjangoセットアップ](Tips/ryeを使ったDjangoセットアップ.md)
 
 ## Unity
-
 - [Unity](Unity/README.md)
 
 - [AnimeToolbox](Unity/AnimeToolbox.md)
 - [MMDアニメーションメモ](Unity/MMDアニメーションメモ.md)
 - [トゥーンレンダリング](Unity/トゥーンレンダリング.md)
-- [VRChat](VRChat/README.md)
 
 ## VRChat
+- [VRChat](VRChat/README.md)
 
+- [OSC](VRChat/OSC.md)
 - [Tolass Custom](VRChat/Tolass_custom.md)
-- [World](VRChat/World.md)
 - [VRCで外部通信](VRChat/VRCで外部通信.md)
+- [Webカメラでフルトラッキング](VRChat/Webカメラでフルトラッキング.md)
+- [World](VRChat/World.md)
 - [アバターのQuest対応](VRChat/アバターのQuest対応.md)
+- [スマホでQuest単騎腰トラ](VRChat/スマホでQuest単騎腰トラ.md)
 - [ワールド自作](VRChat/ワールド自作.md)
 - [衣装の着せ替え](VRChat/衣装の着せ替え.md)
 
-## Imgs
-
+## Snippet
 - [Snippet](snippet/README.md)
 
 - [BERT Q&A](snippet/BERT Q&A.md)

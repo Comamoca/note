@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3382972486afca17",
+        "id": "8e5b42eda21ac531",
         "type": "tabs",
         "children": [
           {
-            "id": "4f8e438d019f65fe",
+            "id": "ea063d3bd175af48",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Ruby/RubyでNeovimプラグインを書く.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 227.5,
+    "collapsed": true
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -93,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Ruby/RubyでNeovimプラグインを書く.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Ruby/RubyでNeovimプラグインを書く.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "article/Ruby/RubyでNeovimプラグインを書く.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,12 +147,20 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "4f8e438d019f65fe",
+  "active": "ea063d3bd175af48",
   "lastOpenFiles": [
+    "article/Denoハンズオン/簡単TypeScript入門.md",
     "article/SUMMARY.md",
+    "article/snippet/MiAuth.md",
+    "VRChat/Webカメラでフルトラッキング.md",
+    "VRChat",
+    "conflict-files-obsidian-git.md",
+    "README.md",
+    "article/Devcontainer/README.md",
+    "article/Deno/README.md",
+    "article/Ruby/RubyでNeovimプラグインを書く.md",
     "article/README.md",
     "article/Ruby/README.md",
-    "article/Ruby/RubyでNeovimプラグインを書く.md",
     "article/VRChat/衣装の着せ替え.md",
     "article/VRChat/Webカメラでフルトラッキング.md",
     "article/Gleam/逆引きGleam.md",
@@ -173,26 +174,18 @@
     "article/Lua/README.md",
     "Deno/Package.md",
     "Deno",
-    "article/Devcontainer/README.md",
     "article/Deno/deno_tui使い方メモ.md",
     "article/Devcontainer/コンテナの構築.md",
     "article/Coordination/README.md",
     "article/Devcontainer",
-    "article/Lua/Teal.md",
-    "article/VRChat/アバターのQuest対応.md",
-    "article/Cotowali/Cotowali.md",
     "ogp.jpg",
     "article/Cotowali",
-    "article/HonKit/README.md",
     "index.html",
     "docs/HonKit/index.html",
     "docs/HonKit",
     "docs/Gleam/elliメモ.html",
     "docs/Gleam/Tips.html",
     "docs/Gleam/Task.html",
-    "docs/Gleam/Supervisor.html",
-    "article/snippet/言語モデルを自作する方法 by ChatGPT.md",
-    "article/Gleam/Supervisor.md",
     "docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg",
     "docs/gitbook/images/apple-touch-icon-precomposed-152.png",
     "docs/imgs/Pasted image 20230522013648.png",
