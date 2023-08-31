@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Deno/README.md",
+                "file": "article/Deno/deno_tui使い方メモ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b0ec3b464c30310",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Deno/Packages.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Deno/README.md",
+                "file": "article/Deno/Packages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Deno/README.md",
+                "file": "article/Deno/Packages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Deno/README.md"
+                "file": "article/Deno/Packages.md"
               }
             }
           }
@@ -154,11 +167,12 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "51b13d010f5caadf",
+  "active": "6b0ec3b464c30310",
   "lastOpenFiles": [
+    "article/Deno/deno_tui使い方メモ.md",
     "article/Deno/Packages.md",
     "article/Deno/README.md",
-    "article/Deno/deno_tui使い方メモ.md",
+    "article/Deno/Packages.md",
     "article/SUMMARY.md",
     "conflict-files-obsidian-git.md",
     "article/VRChat/Webカメラでフルトラッキング.md",
