@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "8e5b42eda21ac531",
+        "id": "7e26945b2119a40c",
         "type": "tabs",
         "children": [
           {
-            "id": "04490e1f92ef3f96",
+            "id": "a0f4229b9857ba2e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "431952805feecdf8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Deno/Packages.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -154,19 +163,19 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "8a0a2e4ddf6d2c86",
+  "active": "431952805feecdf8",
   "lastOpenFiles": [
-    "article/VRChat/Webカメラでフルトラッキング.md",
+    "conflict-files-obsidian-git.md",
     "article/Deno/Packages.md",
+    "article/Deno/README.md",
+    "article/VRChat/Webカメラでフルトラッキング.md",
     "article/VRChat/VRCで外部通信.md",
     "article/Denoハンズオン/簡単TypeScript入門.md",
     "article/SUMMARY.md",
     "article/snippet/MiAuth.md",
     "VRChat",
-    "conflict-files-obsidian-git.md",
     "README.md",
     "article/Devcontainer/README.md",
-    "article/Deno/README.md",
     "article/Ruby/RubyでNeovimプラグインを書く.md",
     "article/README.md",
     "article/Ruby/README.md",

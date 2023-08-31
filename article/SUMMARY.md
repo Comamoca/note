@@ -4,7 +4,6 @@
 - [So Vits Svc&RVC](AIノート/So-vits-svc&RVC/README.md)
 
     - [So Vits Svc](AIノート/So-vits-svc&RVC/So-vits-svc.md)
-- [Stable Diffusion]()
     - [AIノート](AIノート/Stable Diffusion/AIノート.md)
     - [PaperSpaceでLoRAを使ったら学習を行う](AIノート/Stable Diffusion/PaperSpaceでLoRAを使ったら学習を行う.md)
     - [もみじちゃんイラスト生成計画【Part1】](AIノート/Stable Diffusion/もみじちゃんイラスト生成計画【Part1】.md)
@@ -12,17 +11,14 @@
     - [プロンプトメモ](AIノート/Stable Diffusion/プロンプトメモ.md)
 
 ## Cotowali
-
 - [Cotowali](Cotowali/Cotowali.md)
 
 ## Deno
-
 - [Deno](Deno/README.md)
 - [Packages](Deno/Packages.md)
 - [Deno Tui使い方メモ](Deno/deno_tui使い方メモ.md)
 
 ## Denoハンズオン
-
 - [Denoの環境構築](Denoハンズオン/Denoの環境構築.md)
 - [Denoハンズオン](Denoハンズオン/Denoハンズオン.md)
 - [Denoハンズオン例題](Denoハンズオン/Denoハンズオン例題.md)
@@ -106,7 +102,6 @@
 
 ## Snippet
 - [Snippet](snippet/README.md)
-
 - [BERT Q&A](snippet/BERT Q&A.md)
 - [GoでCLI兼ライブラリを作る](snippet/GoでCLI兼ライブラリを作る.md)
 - [MiAuth](snippet/MiAuth.md)
