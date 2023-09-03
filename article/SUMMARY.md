@@ -89,7 +89,6 @@
 
 ## VRChat
 - [VRChat](VRChat/README.md)
-
 - [OSC](VRChat/OSC.md)
 - [Tolass Custom](VRChat/Tolass_custom.md)
 - [VRCで外部通信](VRChat/VRCで外部通信.md)
@@ -99,6 +98,11 @@
 - [スマホでQuest単騎腰トラ](VRChat/スマホでQuest単騎腰トラ.md)
 - [ワールド自作](VRChat/ワールド自作.md)
 - [衣装の着せ替え](VRChat/衣装の着せ替え.md)
+
+## Zig
+- [Zig](Zig/Zig)
+- [Zigのstd.cryptoをNimで呼び出したかった](Zig/Zigのstd.cryptoをNimで呼び出したかった.md)
+- [例外処理](Zig/例外処理.md)
 
 ## Snippet
 - [Snippet](snippet/README.md)
