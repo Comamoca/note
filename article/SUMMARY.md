@@ -100,7 +100,7 @@
 - [衣装の着せ替え](VRChat/衣装の着せ替え.md)
 
 ## Zig
-- [Zig](Zig/Zig)
+- [Zig](Zig/Zig.md)
 - [Zigのstd.cryptoをNimで呼び出したかった](Zig/Zigのstd.cryptoをNimで呼び出したかった.md)
 - [例外処理](Zig/例外処理.md)
 
