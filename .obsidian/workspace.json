@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e03eac86c99ef231",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Zig/Zig.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "29511a6e56c81c4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Zig/Zigのstd.cryptoをNimで呼び出したかった.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "article/Zig/Zigのstd.cryptoをNimで呼び出したかった.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Deno/Packages.md",
+                "file": "article/Zig/Zigのstd.cryptoをNimで呼び出したかった.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Deno/Packages.md"
+                "file": "article/Zig/Zigのstd.cryptoをNimで呼び出したかった.md"
               }
             }
           }
@@ -167,12 +191,15 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "6b0ec3b464c30310",
+  "active": "29511a6e56c81c4f",
   "lastOpenFiles": [
+    "article/Zig/Zigのstd.cryptoをNimで呼び出したかった.md",
+    "article/Zig/例外処理.md",
+    "article/Zig/Zig.md",
     "article/Deno/deno_tui使い方メモ.md",
     "article/Deno/Packages.md",
+    "article/Zig",
     "article/Deno/README.md",
-    "article/Deno/Packages.md",
     "article/SUMMARY.md",
     "conflict-files-obsidian-git.md",
     "article/VRChat/Webカメラでフルトラッキング.md",
@@ -195,7 +222,6 @@
     "article/Lua/README.md",
     "Deno/Package.md",
     "Deno",
-    "article/Devcontainer/コンテナの構築.md",
     "article/Devcontainer",
     "ogp.jpg",
     "article/Cotowali",
@@ -204,7 +230,6 @@
     "docs/HonKit",
     "docs/Gleam/elliメモ.html",
     "docs/Gleam/Tips.html",
-    "docs/Gleam/Task.html",
     "docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg",
     "docs/gitbook/images/apple-touch-icon-precomposed-152.png",
     "docs/imgs/Pasted image 20230522013648.png",
