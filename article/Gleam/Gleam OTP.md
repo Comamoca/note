@@ -1,7 +1,7 @@
 ErlangのOTPフレームワークを使うと、耐障害性の高いアプリケーションを楽に開発できる。
 ここではGleamからOTPフレームワークを使い、そのようなアプリケーションを作る方法をメモしていく。
 
-## GlemaからOTPにアクセスする
+## GlemeからOTPにアクセスする
 
 GleamにはOTPフレームワークを扱うためのライブラリがある。
 [リポジトリ](https://github.com/gleam-lang/otp)
@@ -22,7 +22,7 @@ GenServerなどの名称を使っていない理由は、GleamのActorはGenServ
 詳しくは[ここ](obsidian://open?vault=note&file=article%2FGleam%2FActor)を参照。
 
 ### Task
-単一のタスクを実行してからシャットダウンするプロセスの一種。タスクは、プログラムを並列化することによって逐次的な処理を並列処理にするために使われる。
+単一のタスクを実行してからシャットダウンするプロセスの一種。タスクは、プログラムを並列化することによって逐次的な処理を並列処理にするために使われる。Actorと違ってプログラム実行中に動的に生成される。
 
 詳しくは[ここ](obsidian://open?vault=note&file=article%2FGleam%2FTask)を参照。
 

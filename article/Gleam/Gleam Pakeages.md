@@ -9,6 +9,13 @@ https://github.com/nakaixo/nakai
 HTMLを構築するためのライブラリ。JavaScriptバックエンドには非対応...？
 issueでは組み込みJavaScirptについての議論があったため、サポートする可能性は低そう。
 
+## wisp
+
+https://github.com/lpil/wisp
+
+Gleamで書かれた**実用的な**Web Framework。Gleam作者のlpilさんが開発している。
+ハンドラーとミドルウェアがある。よくあるWeb FWと似た感じ。
+実際に使ってみたので気になる方は[こちら](./Wisp)
 ## elli
 
 https://github.com/gleam-lang/elli
