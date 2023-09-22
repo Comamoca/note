@@ -40,3 +40,8 @@ https://qiita.com/kazssym/items/f7f27414cc5d2058ce7a#%E3%83%91%E3%82%B9%E3%83%95
 - gpgの設定を変更した場合は、gpg-agentを再起動する必要がある。以下の方法で再起動出来る。
   - `gpg-connect-agent killagent /bye`
   - `gpgconf --kill gpg-agent`
+
+## 追記
+
+自分は以下のコマンドを実行したらなぜかパスフレーズの入力から開放された。謎すぎるのでまだ様子見する。
+`/usr/lib/gnupg/gpg-preset-passphrase --preset --passphrase $keygrip`

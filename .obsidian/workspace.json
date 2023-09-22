@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/SUMMARY.md"
+                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md"
               }
             }
           },
@@ -167,8 +167,9 @@
   },
   "active": "e1d515e3db75fcfa",
   "lastOpenFiles": [
-    "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+    "article/Tips/ryeを使ったDjangoセットアップ.md",
     "article/SUMMARY.md",
+    "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
     "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Gleam/Wisp.md",
     "article/Rust",
@@ -201,7 +202,6 @@
     "article/Zig/例外処理.md",
     "article/Gleam/Actor.md",
     "article/Gleam/Supervisor.md",
-    "article/Gleam/逆引きGleam.md",
     "article/Zig",
     "VRChat",
     "Deno",
