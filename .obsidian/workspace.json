@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "be7dc26a907d716b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+                "file": "article/SUMMARY.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5,
-    "collapsed": true
+    "width": 227.5
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+                "file": "article/SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+                "file": "article/SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md"
+                "file": "article/SUMMARY.md"
               }
             }
           },
@@ -179,10 +165,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "be7dc26a907d716b",
+  "active": "e1d515e3db75fcfa",
   "lastOpenFiles": [
-    "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+    "article/SUMMARY.md",
+    "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Gleam/Wisp.md",
     "article/Rust",
     "Gleam/Wisp.md",
@@ -215,7 +202,6 @@
     "article/Gleam/Actor.md",
     "article/Gleam/Supervisor.md",
     "article/Gleam/逆引きGleam.md",
-    "article/Misskeyアドカレ/DenoでMisskeyAPIを操る.md",
     "article/Zig",
     "VRChat",
     "Deno",
