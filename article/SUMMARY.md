@@ -88,6 +88,8 @@
 - [MMDアニメーションメモ](Unity/MMDアニメーションメモ.md)
 - [トゥーンレンダリング](Unity/トゥーンレンダリング.md)
 
+## Vim
+- [LispでNeovimプラグインを書きたい](Vim/LispでNeovimプラグインを書きたい.md)
 ## VRChat
 - [VRChat](VRChat/README.md)
 - [OSC](VRChat/OSC.md)

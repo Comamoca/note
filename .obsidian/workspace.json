@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "df29186b13ecabad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/SUMMARY.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5,
-    "collapsed": true
+    "width": 227.5
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Vim/LispでNeovimプラグインを書きたい.md",
+                "file": "article/SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Vim/LispでNeovimプラグインを書きたい.md",
+                "file": "article/SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Vim/LispでNeovimプラグインを書きたい.md"
+                "file": "article/SUMMARY.md"
               }
             }
           },
@@ -166,13 +178,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b5685770f1bfd24a",
+  "active": "df29186b13ecabad",
   "lastOpenFiles": [
     "article/Vim/LispでNeovimプラグインを書きたい.md",
+    "article/SUMMARY.md",
     "article/Vim/無題のファイル.md",
     "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
     "article/Tips/ryeを使ったDjangoセットアップ.md",
-    "article/SUMMARY.md",
     "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Gleam/Wisp.md",
     "article/Rust",
