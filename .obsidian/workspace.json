@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6511e4c315ebf8cb",
+        "id": "2e687e0b18a760c0",
         "type": "tabs",
         "children": [
           {
-            "id": "e1d515e3db75fcfa",
+            "id": "b5685770f1bfd24a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+                "file": "article/Vim/LispでNeovimプラグインを書きたい.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 227.5,
+    "collapsed": true
   },
   "right": {
     "id": "fb3a9256ad580a31",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+                "file": "article/Vim/LispでNeovimプラグインを書きたい.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
+                "file": "article/Vim/LispでNeovimプラグインを書きたい.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md"
+                "file": "article/Vim/LispでNeovimプラグインを書きたい.md"
               }
             }
           },
@@ -165,18 +166,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e1d515e3db75fcfa",
+  "active": "b5685770f1bfd24a",
   "lastOpenFiles": [
+    "article/Vim/LispでNeovimプラグインを書きたい.md",
+    "article/Vim/無題のファイル.md",
+    "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
     "article/Tips/ryeを使ったDjangoセットアップ.md",
     "article/SUMMARY.md",
-    "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
     "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Gleam/Wisp.md",
     "article/Rust",
     "Gleam/Wisp.md",
-    "article/Vim/無題のファイル.md",
     "article/GitHub",
-    "無題のファイル.md",
     "article/Elixir/GenStage.md",
     "無題のフォルダ 1",
     "article/Elixir/Broadway.md",
@@ -201,7 +202,6 @@
     "article/Gleam/Gleam OTP.md",
     "article/Zig/例外処理.md",
     "article/Gleam/Actor.md",
-    "article/Gleam/Supervisor.md",
     "article/Zig",
     "VRChat",
     "Deno",

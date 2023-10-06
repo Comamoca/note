@@ -280,8 +280,18 @@
 }
 
 /* links */
-span.cm-formatting.cm-formatting-link-string.cm-string.cm-url.external-link {
-  filter: var(--external-link-filter);
+
+.cm-url {
+  filter: none !important;
+}
+
+.cm-string.cm-url.external-link {
+  filter: var(--external-link-filter) !important;
+}
+
+a.external-link {
+  filter: none;
+  background-image: none;
 }
 
 /* notice */
