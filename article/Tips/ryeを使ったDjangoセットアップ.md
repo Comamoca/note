@@ -25,4 +25,4 @@ ryeのデフォルトのPythonのバージョンは何故かpython3.10なので�
 `rye run cpython@3.11 ./src/プロジェクト名 runserver`
 
 LocalHostの`8000`ポートにアクセスして、以下のようなページが表示されたら成功
-![](../imgs/Pasted%20image%2020230601155411.png)
+![](../imgs/Pasted%20image%2020231010100011.png)
