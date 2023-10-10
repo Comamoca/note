@@ -79,6 +79,7 @@
 ## Tips
 
 - [Ryeを使ったDjangoセットアップ](Tips/ryeを使ったDjangoセットアップ.md)
+- [venvと使ったDjangoセットアップ](Tips/venvと使ったDjangoセットアップ.md)
 - [Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する](Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md)
 
 ## Unity

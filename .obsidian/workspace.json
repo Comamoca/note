@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
+                "file": "article/SUMMARY.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
+                "file": "article/SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
+                "file": "article/SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md"
+                "file": "article/SUMMARY.md"
               }
             }
           },
@@ -217,8 +217,8 @@
   "active": "b7998847e80879f8",
   "lastOpenFiles": [
     "article/Tips/venvと使ったDjangoセットアップ.md",
-    "article/imgs/Pasted image 20231010100208.png",
     "article/Tips/ryeを使ったDjangoセットアップ.md",
+    "article/imgs/Pasted image 20231010100208.png",
     "article/imgs/Pasted image 20231010100011.png",
     "article/Lua/Fennel.md",
     "article/Vim/LispでNeovimプラグインを書きたい.md",
