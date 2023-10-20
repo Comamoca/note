@@ -42,33 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fe413d9490dae92b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Tips/ryeを使ったDjangoセットアップ.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b7998847e80879f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/SUMMARY.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Lua/Fennel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Lua/Fennel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/SUMMARY.md"
+                "file": "article/Lua/Fennel.md"
               }
             }
           },
@@ -214,17 +190,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b7998847e80879f8",
+  "active": "5fe494da54790ecb",
   "lastOpenFiles": [
-    "article/Tips/venvと使ったDjangoセットアップ.md",
     "article/Tips/ryeを使ったDjangoセットアップ.md",
+    "article/SUMMARY.md",
+    "article/Tips/venvと使ったDjangoセットアップ.md",
     "article/imgs/Pasted image 20231010100208.png",
     "article/imgs/Pasted image 20231010100011.png",
     "article/Lua/Fennel.md",
     "article/Vim/LispでNeovimプラグインを書きたい.md",
     "article/Lua/Teal.md",
     "article/Vim/無題のファイル.md",
-    "article/SUMMARY.md",
     "article/Tips/Keybaseとgpg-preset-passphraseで良い感じにコミットを署名する.md",
     "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Gleam/Wisp.md",
