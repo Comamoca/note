@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "2e687e0b18a760c0",
+        "id": "c21d081046094645",
         "type": "tabs",
         "children": [
           {
-            "id": "f86a14381203198f",
+            "id": "1ad14f2346738c17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/Vim/LispでNeovimプラグインを書きたい.md",
+                "file": "article/snippet/BERT Q&A.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "df29186b13ecabad",
+            "id": "7d49585bb970b922",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/SUMMARY.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5fe494da54790ecb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Lua/Fennel.md",
+                "file": "article/snippet/Spotify APIの認証方法.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Lua/Fennel.md",
+                "file": "article/snippet/Spotify APIの認証方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Lua/Fennel.md",
+                "file": "article/snippet/Spotify APIの認証方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Lua/Fennel.md"
+                "file": "article/snippet/Spotify APIの認証方法.md"
               }
             }
           },
@@ -190,14 +178,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5fe494da54790ecb",
+  "active": "7d49585bb970b922",
   "lastOpenFiles": [
-    "article/Tips/ryeを使ったDjangoセットアップ.md",
+    "article/snippet/BERT Q&A.md",
+    "article/snippet/Spotify APIの認証方法.md",
     "article/SUMMARY.md",
+    "article/Django/プロジェクトとApps.md",
+    "article/Lua/Fennel.md",
+    "article/snippet/エンカする際にやったほうがいいと思ったこと.md",
+    "article/imgs/Pasted image 20231020135438.png",
+    "article/Django/README.md",
+    "article/Django",
+    "article/Tips/ryeを使ったDjangoセットアップ.md",
     "article/Tips/venvと使ったDjangoセットアップ.md",
     "article/imgs/Pasted image 20231010100208.png",
     "article/imgs/Pasted image 20231010100011.png",
-    "article/Lua/Fennel.md",
     "article/Vim/LispでNeovimプラグインを書きたい.md",
     "article/Lua/Teal.md",
     "article/Vim/無題のファイル.md",
@@ -223,19 +218,13 @@
     "851tegaki_zatsu_normal_0883.ttf",
     "Excalidraw",
     "article/Elixir/Phoenix.md",
-    "article/Elixir/Mix事始め.md",
-    "article/Elixir/ElixirのPlugでGleamを使う.md",
-    "article/Gleam/Gleam Pakeages.md",
-    "article/Gleam/elliメモ.md",
     "Gleam",
     "article/Zig",
     "VRChat",
-    "Deno",
     "ogp.jpg",
     "docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg",
     "docs/gitbook/images/apple-touch-icon-precomposed-152.png",
     "docs/imgs/Pasted image 20230522013648.png",
-    "docs/imgs/Pasted image 20230312074518.png",
-    "docs/imgs/Pasted image 20230601155411.png"
+    "docs/imgs/Pasted image 20230312074518.png"
   ]
 }
