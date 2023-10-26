@@ -116,3 +116,4 @@
 - [Nim メタプロ](snippet/Nim メタプロ.md)
 - [中国語メモ](snippet/中国語メモ.md)
 - [言語モデルを自作する方法 By ChatGPT](snippet/言語モデルを自作する方法 by ChatGPT.md)
+- [Spotify APIの認証方法](snippet/Spotify APIの認証方法.md)
