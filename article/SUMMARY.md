@@ -91,9 +91,6 @@
 
 ## Vim
 - [LispでNeovimプラグインを書きたい](Vim/LispでNeovimプラグインを書きたい.md)
-- [ddp.vimをLuaで設定する](Vim/ddp.vimをLuaで設定する.md)
-## VRChat
-- [VRChat](VRChat/README.md)
 - [OSC](VRChat/OSC.md)
 - [Tolass Custom](VRChat/Tolass_custom.md)
 - [VRCで外部通信](VRChat/VRCで外部通信.md)
