@@ -1,3 +1,6 @@
+Zennにこの記事を清書したものを[公開](https://zenn.dev/comamoca/articles/howto-setup-dpp-vim)しています。
+もし何らかの変更があった場合、[Zennの方](https://zenn.dev/comamoca/articles/howto-setup-dpp-vim)を更新していくことになるため新しい情報が欲しい場合は[Zennの方](https://zenn.dev/comamoca/articles/howto-setup-dpp-vim)を参照してください。
+
 Shougoさんがドッグフーディングを開始したそうなので、dpp.vimの導入を始めてみる。
 
 この記事ではdein.vimからdpp.vimへと移行する事を想定して、どのように設定を構成していけば良いのか書いていく。

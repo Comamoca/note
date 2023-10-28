@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "088735a41a5ff482",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Vim/dpp.vimをLuaで設定する.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "824eff23d9766227",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "article/snippet/Spotify APIの認証方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e98c2a1af1ad18c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/SUMMARY.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Vim/dpp.vimをLuaで設定する.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Vim/dpp.vimをLuaで設定する.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/SUMMARY.md"
+                "file": "article/Vim/dpp.vimをLuaで設定する.md"
               }
             }
           },
@@ -202,12 +178,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e98c2a1af1ad18c7",
+  "active": "7f2384e096d8f317",
   "lastOpenFiles": [
+    "article/snippet/Spotify APIの認証方法.md",
+    "article/imgs/Pasted image 20231026181956.png",
     "article/Vim/dpp.vimをLuaで設定する.md",
     "article/SUMMARY.md",
-    "article/imgs/Pasted image 20231026181956.png",
-    "article/snippet/Spotify APIの認証方法.md",
     "article/Vim/LispでNeovimプラグインを書きたい.md",
     "article/snippet/BERT Q&A.md",
     "article/imgs/Pasted image 20231024112900.png",
