@@ -92,6 +92,8 @@
 ## Vim
 - [LispでNeovimプラグインを書きたい](Vim/LispでNeovimプラグインを書きたい.md)
 - [dpp.vimをLuaで設定する](Vim/dpp.vimをLuaで設定する.md)
+- [init.lua大掃除](Vim/init.lua大掃除.md)
+- [VimConf TinyのLTについて](Vim/VimConf TinyのLTについて.md)
 
 ## VRChat
 - [OSC](VRChat/OSC.md)
