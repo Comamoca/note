@@ -76,6 +76,9 @@
 - [Ruby](Ruby/README.md)
 - [RubyでNeovimプラグインを書く](Ruby/RubyでNeovimプラグインを書く.md)
 
+## Shell
+- [Shrsを使ってみた](Shell/Shrsを使ってみた.md)
+
 ## Tips
 
 - [Ryeを使ったDjangoセットアップ](Tips/ryeを使ったDjangoセットアップ.md)
