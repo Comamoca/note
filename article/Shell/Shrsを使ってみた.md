@@ -1,6 +1,7 @@
 ## shrsとは
 site: https://mrpicklepinosaur.github.io/shrs/
-**RustでShellを構築できるフレームワーク**
+
+**RustでShellを構築できるフレームワーク**  
 フレームワークなので自由自在にロジックを構築することができる。
 
 > Of course it is blazingly fast

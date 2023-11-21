@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Shell/Shrsを使ってみた.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Shell/Shrsを使ってみた.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/SUMMARY.md"
+                "file": "article/Shell/Shrsを使ってみた.md"
               }
             }
           },
@@ -178,10 +177,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "76e075a03862fafd",
+  "active": "439bbbec53f1d053",
   "lastOpenFiles": [
-    "article/Shell/Shrsを使ってみた.md",
     "article/SUMMARY.md",
+    "article/Shell/Shrsを使ってみた.md",
     "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Shell",
     "article/snippet/Spotify APIの認証方法.md",
