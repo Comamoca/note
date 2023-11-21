@@ -5,7 +5,8 @@ site: https://mrpicklepinosaur.github.io/shrs/
 フレームワークなので自由自在にロジックを構築することができる。
 
 > Of course it is blazingly fast  
-Rust製なのでもちろんめちゃくちゃ速い
+
+Rust製なのでもちろんめちゃくちゃ速いよ
 
 例えば最低限動くshellの実装はこんな感じ
 
