@@ -4,7 +4,7 @@ site: https://mrpicklepinosaur.github.io/shrs/
 **RustでShellを構築できるフレームワーク**  
 フレームワークなので自由自在にロジックを構築することができる。
 
-> Of course it is blazingly fast
+> Of course it is blazingly fast  
 Rust製なのでもちろんめちゃくちゃ速い
 
 例えば最低限動くshellの実装はこんな感じ
