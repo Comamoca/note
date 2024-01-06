@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "439bbbec53f1d053",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "article/Shell/Shrsを使ってみた.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "76e075a03862fafd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/SUMMARY.md",
+                "file": "article/Godot/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spotify",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Shell/Shrsを使ってみた.md",
+                "file": "article/Godot/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Shell/Shrsを使ってみた.md",
+                "file": "article/Godot/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Shell/Shrsを使ってみた.md"
+                "file": "article/Godot/README.md"
               }
             }
           },
@@ -155,7 +143,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -177,9 +167,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "439bbbec53f1d053",
+  "active": "76e075a03862fafd",
   "lastOpenFiles": [
     "article/SUMMARY.md",
+    "article/Godot/README.md",
+    "article/Godot",
+    "article/Elixir/Godot",
     "article/Shell/Shrsを使ってみた.md",
     "article/Rust/Travis CIを使ってRustでバイナリ配布したい.md",
     "article/Shell",
@@ -219,11 +212,8 @@
     "Excalidraw/Drawing 2023-09-13 12.01.52.excalidraw.md",
     "article/Elixir/ビヘイビア.md",
     "article/Devcontainer/README.md",
-    "article/Elixir/README.md",
     "851tegaki_zatsu_normal_0883.ttf",
     "Excalidraw",
-    "Gleam",
-    "article/Zig",
     "ogp.jpg"
   ]
 }

@@ -48,6 +48,12 @@
 - [Nakaiメモ](Gleam/nakaiメモ.md)
 - [逆引きGleam](Gleam/逆引きGleam.md)
 
+## Godot
+
+- [README](Godot/README.md)
+- [ハウトゥーGodot征服](Godot/ハウトゥーGodot征服.md)
+
+
 ## Haxe
 - [Haxe](Haxe/README.md)
 - [Haxeのビルドまとめ](Haxe/Haxeのビルドまとめ.md)
