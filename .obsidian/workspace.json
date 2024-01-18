@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d6f343814fe3da7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Ocaml/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4270f5b530cc4f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "article/Ocaml/Ocamlde.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "article/Godot/README.md",
+                "file": "article/Ocaml/Ocamlde.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "article/Godot/README.md",
+                "file": "article/Ocaml/Ocamlde.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/Godot/README.md"
+                "file": "article/Ocaml/Ocamlde.md"
               }
             }
           },
@@ -167,10 +192,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "76e075a03862fafd",
+  "active": "b4270f5b530cc4f5",
   "lastOpenFiles": [
-    "article/SUMMARY.md",
+    "article/Ocaml/README.md",
+    "article/Ocaml/Ocamlde.md",
     "article/Godot/README.md",
+    "article/Ocaml",
+    "article/SUMMARY.md",
     "article/Godot",
     "article/Elixir/Godot",
     "article/Shell/Shrsを使ってみた.md",
@@ -210,10 +238,7 @@
     "article/imgs/Pasted image 20230914092031.png",
     "article/imgs/Pasted image 20230914091556.png",
     "Excalidraw/Drawing 2023-09-13 12.01.52.excalidraw.md",
-    "article/Elixir/ビヘイビア.md",
-    "article/Devcontainer/README.md",
     "851tegaki_zatsu_normal_0883.ttf",
-    "Excalidraw",
     "ogp.jpg"
   ]
 }
