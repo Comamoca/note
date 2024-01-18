@@ -78,6 +78,11 @@
 
 - [Obsidianを使ってみよう](Obsidianハンズオン/Obsidianを使ってみよう.md)
 
+## Ocaml
+
+- [README](OCaml/README.md)
+- [OCamlでCLIツールを作りたい](OCaml/OCamlでCLIツールを作りたい.md)
+
 ## Ruby
 - [Ruby](Ruby/README.md)
 - [RubyでNeovimプラグインを書く](Ruby/RubyでNeovimプラグインを書く.md)
