@@ -100,7 +100,8 @@ Error(Nil)
 - `Error()`だった場合の値
 を指定する。Rustの`unwrap()`と動作が違うので注意。(どちらかというと`unwrap_or_default()`に近い挙動をする。)
 
-	## Elixirと連携したい
+## Elixirと連携したい
+
 ここではElixirの`IO.puts()`をGleamから呼び出してみる。
 ```rust
 pub external fn puts(text) -> atom.Atom() =
@@ -121,6 +122,25 @@ pub external fn run() -> Int =
 Elixirでモジュールを指定したように**JavaScriptのファイル名**を指定する。その次の関数名の指定は同じ。
 
 ## 他のBEAM言語との連携
+
+2024/01/22追記
+
+Gleamで他のBEAM言語の関数を呼び出す方法が変更されている。
+Pythonのデコレータのように、関数の上に`@external`キーワードを書いて宣言する。
+
+[公式ドキュメント](https://gleam.run/book/tour/external-functions.html)
+
+
+```rust
+// Erlangのrand:uniform()を呼び出す場合
+@external(erlang, "rand", "uniform")
+pub fn random() -> Float
+```
+
+```
+```
+
+---
 
 他のBEAM系言語(Ex. Erlang/Elixir)の関数を呼び出すには、`external`キーワードを使って関数を宣言する。
 
@@ -152,7 +172,9 @@ pub external fn any(in: List(a), satisfying: fn(a) -> Bool) =
 ```
 GleamとElixirの相互運用についてはこの[サンプルプロジェクト](https://github.com/gleam-lang/mix_gleam/tree/main/test_projects/basic_project)が参考になる。
 
+
 ### Elixirのライブラリを使いたい
+
 ElixirのライブラリをGleamから使うには、
 - `gleam add パッケージ名`でパッケージを追加
 - `external`で関数を宣言
