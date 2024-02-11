@@ -59,7 +59,7 @@
 - [Haxeのビルドまとめ](Haxe/Haxeのビルドまとめ.md)
 
 ## Nostr
-- [README](Nostr/README.md) 
+- [Nostr](Nostr/README.md) 
 - [NIP-01](Nostr/NIP-01.md)
 
 ## HonKit
