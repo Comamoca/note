@@ -175,6 +175,13 @@ GleamとElixirの相互運用についてはこの[サンプルプロジェク�
 
 ### Elixirのライブラリを使いたい
 
+<div style="color: red; font-size: 2rem; font-weight: bold;">
+Gleamのバージョンアップに伴いこの方法は使えなくなりました。<br>
+こちらで新しい方法について解説しています。
+</div>
+
+https://zenn.dev/comamoca/articles/interop-of-gleam-and-elixir
+
 ElixirのライブラリをGleamから使うには、
 - `gleam add パッケージ名`でパッケージを追加
 - `external`で関数を宣言
@@ -188,7 +195,7 @@ Gleamは[Hex]()に対応しているので`gleam add`でGleamパッケージと�
 ```rust
 pub external fn gfm_to_html(text) -> Result(String, String) =
 "Elixir.Pandex" "gfm_to_html"
-```
+  ```
 
 ## Javascriptターゲット
 
