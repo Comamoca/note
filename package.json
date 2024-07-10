@@ -1,0 +1,36 @@
+{
+  "name": "honox-minimal",
+  "type": "module",
+  "dependencies": {
+    "@mdx-js/rollup": "^3.0.1",
+    "@pagefind/default-ui": "^1.1.0",
+    "hono": "^4.4.12",
+    "honox": "^0.1.23",
+    "install": "^0.13.0",
+    "pagefind": "^1.1.0",
+    "remark-gfm": "^4.0.0",
+    "vite": "^5.3.3"
+  },
+  "devDependencies": {
+    "@hono/vite-ssg": "^0.1.0",
+    "@shikijs/rehype": "^1.10.3",
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.19",
+    "daisyui": "^4.12.10",
+    "postcss": "^8.4.39",
+    "shiki": "^1.10.3",
+    "tailwindcss": "^3.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode client && vite build",
+    "preview": "wrangler pages dev",
+    "deploy": "$npm_execpath run build && wrangler pages deploy",
+    "index": "bunx pagefind --site ./dist",
+    "devindex": "bunx pagefind --site ./dist --output-path=./public/"
+  }
+}
