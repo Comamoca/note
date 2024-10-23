@@ -18,7 +18,10 @@ export default (() => {
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
-    const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
+
+    // TODO: OGPをsatoriで動的生成する
+    const ogImagePath = `https://r2.comamoca.dev/2024-07-27-livefun.jpg`
+    // const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
 
     return (
       <head>
