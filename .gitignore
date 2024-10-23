@@ -1,3 +1,11 @@
-_book/
+.DS_Store
+.gitignore
 node_modules
-.mermaid_*
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
