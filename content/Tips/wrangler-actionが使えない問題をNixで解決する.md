@@ -1,18 +1,22 @@
 [ブログ](https://comamoca.dev)をGitHub Actionsからデプロイしようとしてたらこういうエラーにでくわした。
 
 
-https://github.com/Comamoca/blog/actions/runs/11899448668/job/33158099218
+https://github.com/Comamoca/blog/actions/runs/11778908967/job/32806274487
 
 ```
-  611 files generated in 31.34 seconds
-warning: Git tree '/home/runner/work/blog/blog' is dirty
-/home/runner/work/_temp/nix-shell.ZWKMyS: eval: line 2251: unexpected EOF while looking for matching `''
-
-✘ [ERROR] In a non-interactive environment, it's necessary to set a CLOUDFLARE_API_TOKEN environment variable for wrangler to work. Please go to https://developers.cloudflare.com/fundamentals/api/get-started/create-token/ for instructions on how to create an api token, and assign its value to CLOUDFLARE_API_TOKEN.
-
-
-🪵  Logs were written to "/home/runner/.config/.wrangler/logs/wrangler-2024-11-18_19-16-51_807.log"
-Error: Process completed with exit code 1.
+Run cloudflare/wrangler-action@v3
+  with:
+    apiToken: ***
+    accountId: ***
+    command: pages deploy ./_site --project-name=blog --commit-dirty=true
+    quiet: false
+  env:
+    TMPDIR: /home/runner/work/_temp
+🔍 Checking for existing Wrangler installation
+  ⚠️ Wrangler not found or version is incompatible. Installing...
+📥 Installing Wrangler
+Error: Unable to locate executable file: bun. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also check the file mode to verify the file is executable.
+Error: 🚨 Action failed
 ```
 
 なんかよく分からないけどwrangler自体のインストールに失敗する。
