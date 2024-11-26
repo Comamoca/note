@@ -23,8 +23,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Zen Kurenaido",
-        body: "Zen Kurenaido",
+        header: "Zen Maru Gothic",
+        body: "Zen Maru Gothic",
         code: "IBM Plex Mono",
       },
       colors: {
