@@ -19,6 +19,7 @@ import { options } from "./util/sourcemap"
 import { Mutex } from "async-mutex"
 import DepGraph from "./depgraph"
 import { getStaticResourcesFromPlugins } from "./plugins"
+import fs from "fs"
 
 type Dependencies = Record<string, DepGraph<FilePath> | null>
 
@@ -76,8 +77,6 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   )
 
   const filePaths = fps.map((fp) => joinSegments(argv.directory, fp) as FilePath)
-  ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
-
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   const filteredContent = filterContent(ctx, parsedFiles)
 
@@ -99,6 +98,17 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   if (argv.serve) {
     return startServing(ctx, mut, parsedFiles, clientRefresh, dependencies)
   }
+
+  // For llms.txt support.
+  // To collect contents from all articles.
+  perf.addEvent("concatenate")
+  const concatContets = filteredContent.map(([_tree, vfile]) => {
+    return `${vfile.toString()}\n\n`
+  }).join("")
+
+  // Write to llms-full.txt
+  await fs.promises.mkdir(argv.output, {recursive: true}) 
+  await fs.promises.writeFile(path.join(output, "llms-full.txt"), concatContets)
 }
 
 // setup watcher for rebuilds
